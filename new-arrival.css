@@ -1,0 +1,158 @@
+.new-arrival{
+    width: 100%; 
+    padding-bottom: 20px;
+}
+.new-arrival-head{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+.new-arrival-moving-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.arrow{
+    font-weight: 5px;
+    font-size: 50px;
+    
+}
+.slider:hover{
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.card-box{
+    padding: 4px 4px 4px 4px;
+    width: 23%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-sizing: border-box;
+}
+.card-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.card-info-name{
+    display: flex;
+    justify-content: space-between;
+
+}
+.offfer-discount{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+}
+.card-info-img{
+    height: 170px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.croess-rate{
+    color: #a4a4a4;
+}
+.croess-rate span{
+    text-decoration: line-through;
+}
+.rate{
+    line-height: 1px;
+}
+.current-rate{
+    color: #f4104a;
+    font-size: 25px;
+}
+.current-rate span{
+    color: #f4104a;
+    font-size: 15px;
+}
+.centerd-title{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+}
+.centerd-title :first-child{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.centerd-title :last-child{
+    font-size: 12px;
+    color: #666666;
+}
+.centerd-title :last-child:hover{
+    cursor: pointer;
+}
+.navBar{
+    width: 93%;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.navBar>div:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.NewProduct-center{
+    width: 93%;
+    margin-top: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 15px;
+}
+.NewProduct-center>div{
+    width: 100%;
+}
+.NewProduct-center>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.NewProduct-center-img{
+    width: 90%;
+    height: 210px;
+    object-fit: fill;
+    padding-top: 2px;
+    padding-left: 3%;
+}
+.NewProduct-center-p{
+    font-size: 18px;
+    margin: 0px 10px 0px 10px;
+}
+.NewProduct-center-priceDiv{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    justify-content: space-between;
+}
+.NewProduct-center-priceDiv p{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.NewArrivalAll{
+    width: 70%;
+    margin: auto;
+}
