@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;500&family=Ubuntu:wght@500&display=swap');
+       #Main_container{
+           margin: auto; 
+           width: 80%;
+        }
+        .collection,.superdeals{
+            /* width: 95%; */
+           /* height: 250px;  */
+           
+           display: grid;
+           margin: auto;
+           grid-template-columns: repeat(5,1fr);
+           gap: 10px;
+       }
+       .recommeded{
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(5,1fr);
+        gap: 10px;
+       }
+       .recommeded>div{
+        padding: 10px;
+       }
+       .recommeded>div:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+       }
+       .collection>div{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          text-align: center;
+       }
+       .superdeals>div{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          padding: 10px;
+       }
+       .new>div{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          
+       }
+       
+       img{
+           height: 200px;
+           width: 200px;
+       }
+       /* .collection,.superdeals,.new p{
+           text-align: center;
+          
+       } */
+       .heading{
+        font-family: Poppins;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        margin-top: 50px;
+       }
+      p{
+        font-family: sans-serif;
+      }
+       .price{
+           color: red;
+           font-size: 20px;
+           margin-left: 0px;
+       }
+       .strikeprice{
+           text-decoration: line-through;
+           margin-left: 0px;
+       }
+       /* .collection>div>p:hover{
+           background-color: rgb(218, 27, 27);
+
+       } */
+       .gbItem_discount {
+        margin-left: 160px;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: #e71c1c;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+    }
