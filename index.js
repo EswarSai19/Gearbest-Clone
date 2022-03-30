@@ -1,4 +1,5 @@
 
+// middle part js start here
 products = [
     {
     img : "https://gloimg.gbtcdn.com/soa/gb/item/6900746726869757952/16469/goods_img-v1/2c104688ae40.jpg" ,
@@ -81,6 +82,7 @@ products.map(function(ele){
   var box = document.createElement("div");
   var img = document.createElement("img");
   img.src = ele.img;
+  img.setAttribute("class","middleImg")
   var name = document.createElement("p");
   name.innerText = ele.name;
   
@@ -93,3 +95,37 @@ products.map(function(ele){
   box.append(discount,img,name,price);
   document.querySelector(".recommeded").append(box);
 })
+// middle part js end here 
+
+
+// top part js start here
+
+var catdata=[
+  {name:"Consumer Electronics"},
+  {name:"Industrial & Scientific"},
+  {name:"Cell Phones & Accessories"},
+  {name:"Appliances"},
+  {name:"Outdoor, Fitness & sports"},
+  {name:"Computers,Tables & Offic"},
+  {name:"Health & Personal Care"},
+  {name:"Home & Personal Care"},
+  {name:"Home Improvement & Tools"},
+  {name:"Drones, Toys & Hobbies"},
+  {name:"Home & Garden"},
+  {name:"Motor & Car Electronics"},
+  {name:"Mens Fashion"},  
+  {name:"Womens & Jwellery"},
+  {name:"Gearbest Promotion"},
+  
+  ];
+
+  catdata.map(function(ele){
+     var name= document.createElement("div")
+     name.innerText=ele.name;
+
+     document.querySelector("#category").append(name)
+  })
+ document.querySelector("#service").addEventListener("mouseenter")
+
+
+//  top part js end here
