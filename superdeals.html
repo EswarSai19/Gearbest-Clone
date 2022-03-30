@@ -4,9 +4,702 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4dbaa63c16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="superdeals.css">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        #first_box{
+            width: 92%;
+            height: 100px;
+            /* border: 1px solid ; */
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            /* margin-left: 10px; */
+        }
+        #flash_sales,#all_flash_sales{
+            width: 100px;
+            height: 98%;
+            /* border: 1px solid; */
+            margin-left: 10px;
+        }
+        #first_box img{
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #first_box h3:hover{
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            color: black;
+        }
+        #first_box div:hover{
+            cursor: pointer;
+        }
+        #first_box h3{
+            color: #b0b0b0;
+            text-align: center;
+            line-height: 1px;
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #catagories{
+            width : 80%;
+            height: 100%;
+            display: flex;
+        }
+        #catagories>div{
+            height: 98%;
+            width :18%;
+        }
+        i{
+            font-size: 20px;
+           margin-top: 35px;
+        }
+        #second_box{
+            width: 100%;
+            height: 80px;
+            border: 1px solid;
+            margin: auto;
+            display: flex;
+            background-color: #3e3434;
+        }
+        #second_box>div:hover{
+            background-color: #fa4644;
+            cursor: pointer;
+            
+        }
+        #second_box>div{
+            width: 30%;
+        }
+        #second_box p{
+            text-align: center;
+            color: #857c7c;
+            line-height: 2px;
+            font-size: 20px;
+        }
+        #second_box>div:nth-child(1){
+            margin-left: 60px;
+        }
+        #third_box{
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        #sorting{
+            display: flex;
+        }
+        #sorting>div{
+            margin-left: 10px;
+            height: 30px;
+            display: flex;
+        }
+        #sorting p{
+            font-size: 13px;
+            margin: auto;
+        }
+        .arrow i{
+            margin: auto;
+            font-size: 10px;
+            margin-left: 3px;
+        }
+        #pro_container{
+            
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 15px;
+        }
+        #innerBox{
+            margin: auto;
+           padding: 5px;
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+           box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        #stPrice{
+            display: flex;
+            margin-top: -30px;
+        }
+        #third_box div:hover{
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;            cursor: pointer;
+        }
+        #bottom_container{
+            height: 120px;
+            width: 100%;
+            margin-top: 30px;
+            padding-top: 15px;
+            background-color: #ffffff;
+        }
+        #box1{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 40px;
+        }
+        #box1>div{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+       #searches div{
+            width: 20%;
+            padding: auto;
+            width: auto;
+            margin-left: 40px;
+            height: 30px;
+            
+            
+       }
+       #box1>div:nth-child(1){
+           width: 220px;
+           display: flex;
+           margin-top: -40px;
+           margin-left: 10px;
+       }
+       #box2{
+           width: 95%;
+           height: 200px;
+           /* border: 1px solid; */
+           margin: auto;
+           margin-top: 40px;
+           display: flex;
+           background-color: #ffffff;
+       }
+       #box2>div{
+           width: 19%;
+           height: auto;
+           margin: auto;
+           /* border: 1px solid; */
+       }
+       #logo>img{
+            width: 100%;
+            height: 45px;
+       }
+       h4{
+           padding-left: 15px;
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           font-size: 17px;
+           width: 200px;
+           margin-top: -1px;
+           text-align: center;
+       }
+       .logoicons>img{
+            display: block;
+            margin: auto;
+            width: 55px;
+            height: 50px;
+       }
+       .logoicons>h4{
+           font-size: 17px;
+           margin-bottom: -2px;
+           margin-top: 5px;
+       }
+    
+       .logoicons>p{
+           font-size: 15px;
+           width: 155px;
+           text-align: center;
+           margin: auto;
+       }
+       #box3{
+            width: 95%;
+            height: 400px;
+            border: 1px solid;
+            margin: auto;
+       }
+       #line1{
+           display: flex;
+           margin-left: 10px;
+       }
+       #social{
+           display: flex;
+       }
+    </style>
 </head>
 <body>
-    <h1>superdeals got updated</h1>
+    <div id="main_container">
+        <div id="first_box">
+            <div id="flash_sales">
+                <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/supDeals.png" alt="">
+                <h3>Flash Sales</h3>
+            </div>
+            <div id="all_flash_sales">
+                <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/All%20Flash%20Sales.png?imbypass=true" alt="">
+                <h3>All Flash Sales</h3>
+            </div>
+            <div id="catagories">
+                <i class="fa-solid fa-chevron-left"></i>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Exclusive%20Brands.png?imbypass=true" alt="">
+                    <h3>Exclusive Brands</h3>
+                </div>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Mobile%20Phones1.png" alt="">
+                    <h3>Mobile Phones</h3>
+                </div>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Electronics1.png?imbypass=true" alt="">
+                    <h3>Electronics</h3>
+                </div>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Toys,%20Baby%20&%20Kids11.png?imbypass=true" alt="">
+                    <h3>Toys,Baby & Kids</h3>
+                </div>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Computer%20&%20Office11.png?imbypass=true" alt="">
+                    <h3>Computer & Office</h3>
+                </div>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Electrical%20&%20Tools1.png?imbypass=true" alt="">
+                    <h3>Electrical & Tools</h3>
+                </div>
+                <div>
+                    <img src="https://uidesign.gbtcdn.com/GB/images/others/top_brands/Appliances11.png?imbypass=true" alt="">
+                    <h3>Appliances</h3>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div id="second_box">
+            <div>
+                <p>Ends In:</p>
+                <p>09:02:10</p>
+            </div>
+            <div>
+                <p>Ends In:</p>
+                <p>33:02:10</p>
+            </div>
+            <div>
+                <p>Ends In:</p>
+                <p>3/29 21:30</p>
+            </div>
+        </div>
+        <div id="third_box">
+            <div id="sorting">
+                <div>
+                    <p>Sort By:</p>
+                </div>
+                <div>
+                    <p>Recommend</p>
+                </div>
+                <div>
+                    <p>Hottest</p>
+                </div>
+                <div>
+                    <p>Newest</p>
+                </div>
+                <div class="arrow">
+                    <p>Price</p>
+                    <i class="fa-solid fa-caret-up"></i>
+                </div>
+                <div class="arrow">
+                    <p>Discount</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div id="pro_container"></div>
+        </div>
+    </div>
+    <div id="bottom_container">
+        <div id="box1">
+            <div id="pop">Popular Searches:</div>
+            <div id="searches">
+                <div>xiaomi poco m3</div>
+                <div>ortur master 2 20w</div>
+                <div>men's sweatshirt</div>
+                <div>tpu case</div>
+                <div>xiomi accessories</div>
+                <div>screen protector</div>
+                <div>leather men's belt</div>
+                <div>tpu phone </div>
+                <div>mobile phone </div>
+                <div> phone telefono </div>
+                <div> camera xiaomi </div>
+                <div>xiaomi wifi battery</div>
+                <div>2g 16g s912 </div>
+                <div> men's t-shirts white</div>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="logo">
+                <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png" alt="">
+                <h4>AFFORDABLE QUALITY FUN SHOPPING</h4>
+            </div>
+            <div class="logoicons">
+                <img src="https://i.ibb.co/gvp1mx5/Screenshot-2022-03-30-062103.png" alt="">
+                <h4>High Quality Selection</h4>
+                <p>Total product quality control for peace of mind</p>
+            </div>
+            <div class="logoicons">
+                <img src="https://i.ibb.co/rH0VFGS/Screenshot-2022-03-30-062127.png" alt="">
+                <h4>Affordable Prices</h4>
+                <p>Factory direct prices for maximum savings</p>
+            </div>
+            <div class="logoicons">
+                <img src="https://i.ibb.co/yFV3mfs/Screenshot-2022-03-30-061850.png" alt="">
+                <h4>Express Shipping</h4>
+                <p>Fast, reliable delivery from global warehouses</p>
+            </div>
+            <div class="logoicons">
+                <img src="https://i.ibb.co/q92TcQS/Screenshot-2022-03-30-061922.png" alt="">                
+                <h4>Worry-free After-sales</h4>
+                <p>Instant access to professional support</p>
+            </div>
+        </div>
+        <div id="box3">
+            <div id="line1">
+                <div>NEWSLETTER</div>
+                <div>
+                    <input type="text" placeholder="Enter Email to get 50 Points">
+                    <button>SUBSCRIBE</button>
+                </div>
+                <div id="social">
+                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                    <div><i class="fa-brands fa-facebook-messenger"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                    <div><i class="fa-brands fa-pinterest-p"></i></div>
+                    <div><i class="fa-brands fa-vk"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div>Blog</div>
+                    <div><i class="fa-brands fa-tumblr"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    var ProductsAarr = [
+         {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16424/goods_thumb_220-v3/30698becca79.jpg",
+            name:"Fast Charge 5A USB Type C Cable For Samsung S20 S9 S8...",
+            price:"$4.40",
+            strikeOffPrice:"$6.28",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_thumb_220-v1/cf920d3748e6.jpg",
+            name:"ASLING Multi USB Charging Cable 3A 3 in 1 Fast Charger...",
+            price:"$4.99",
+            strikeOffPrice:"$7.99",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6901600725130997760/16477/goods_thumb_220-v1/da32610aba5a.jpg",
+            name:"Xiaomi Youpin Huohou Automatic Red Wine Bottle...",
+            price:"$29.99",
+            strikeOffPrice:"$63.69",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6878027957345120256/16418/goods_thumb_220-v2/78fa45e1140c.jpg",
+            name:"Weide watch2007Mens Watches Chronograph Date...",
+            price:"$29.99",
+            strikeOffPrice:"$40.99",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16416/goods_thumb_220-v1/ac3f03cb3b32.jpg",
+            name:"Original XIAOMI MIJIA Garment Steamer iron Home Electric...",
+            price:"$35.99",
+            strikeOffPrice:"$79.99",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6903729795729911808/16476/goods_thumb_220-v1/bf29d9a0996d.jpg",
+            name:"Battery Astronaut Robot Rainbow Projection Sun Lamp Table Night Light Sunset Lamp...",
+            price:"$5.99",
+            strikeOffPrice:"$8.99",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16433/goods_thumb_220-v1/e48a76c38fc7.jpg",
+            name:"2022 New KF106 RC Drone Visual Obstacal Avoidance 4K...",
+            price:"$79.99",
+            strikeOffPrice:"$82.29",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v5/2f6731bcaf17.jpg",
+            name:"New Smartwatch 2022 KOSPET TANK M1 Rugged Outdoor...",
+            price:"$54.99",
+            strikeOffPrice:"$119.99",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16480/goods_thumb_220-v1/dfb3f553bf77.jpg",
+            name:"Original Lenovo LP80 TWS Bluetooth Wireless Earphones...",
+            price:"$23.99",
+            strikeOffPrice:"$34.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16456/goods_thumb_220-v3/69449b66ae82.jpg",
+            name:"BDF P30 Pro 10.1 Inch Octa Core Tablet PC 4GB RAM 64GB...",
+            price:"$191.99",
+            strikeOffPrice:"$201.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6866331933228593152/16460/goods_thumb_220-v1/52052923d28a.jpg",
+            name:"Xiaomi Mi 11 Lite 5G NE EEA 6GB+128GB 5G Smartphone...",
+            price:"$349.99",
+            strikeOffPrice:"$399.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16469/goods_thumb_220-v3/06a95afc3388.jpg",
+            name:"Xiaomi Youpin Showsee Electric Shaver for Men F305 Barber...",
+            price:"$38.49",
+            strikeOffPrice:"$54.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16478/goods_thumb_220-v1/ee80192da4f6.jpg",
+            name:"GT20 1.69 Inch Big Screen Smart Watch Men Women Sport...",
+            price:"$16.99",
+            strikeOffPrice:"$28.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16433/goods_thumb_220-v1/9ba4ca2a3462.jpg",
+            name:"SAMEBIKE XWLX09 Foldable Electric Bicycle 500W 48V 10Ah...",
+            price:"$959.09",
+            strikeOffPrice:"$1334.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16432/goods_thumb_220-v3/d7e0c670df9b.jpg",
+            name:"ENGWE EP-2 PRO Folding Electric Bike 12.8Ah 750W Fat...",
+            price:"$899.99",
+            strikeOffPrice:"$1099.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16450/goods_thumb_220-v1/a400b6a29df4.jpg",
+            name:"KUU SBOOK M-2 Laptop 13.3 inch Atom x7-E3950 4 Core...",
+            price:"$209.99",
+            strikeOffPrice:"$299.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16475/goods_thumb_220-v1/974197f8bb55.jpg",
+            name:"LONGER RAY5 Laser Engraver 3.5inch Touch Screen Offline...",
+            price:"$279.99",
+            strikeOffPrice:"$459.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16481/goods_thumb_220-v3/e2b6c143ca28.jpg",
+            name:"Original Xiaomi Mi Compact Bluetooth Speaker 2 Portable...",
+            price:"$15.99",
+            strikeOffPrice:"$16.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v3/90ff70e6683a.jpg",
+            name:"KOSPET Optimus 2 4G Smart Watch Men 4GB 64GB 13MP...",
+            price:"$199.99",
+            strikeOffPrice:"$309.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6878027957345120256/16464/goods_thumb_220-v1/594e9c1c650a.jpg",
+            name:"Mens New Fashion Watches Luxury Brand Sport Waterproof...",
+            price:"$55.99",
+            strikeOffPrice:"$99.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16475/goods_thumb_220-v1/241ff9b25805.jpg",
+            name:"150 Time Professional Astronomical Telescope for...",
+            price:"$89.99",
+            strikeOffPrice:"$179.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6880546766379479040/16426/goods_thumb_220-v1/4612b326b42e.jpg",
+            name:"New X96 X4 8K Smart TV Box Android 11 S905X4 RGB Light...",
+            price:"$54.99",
+            strikeOffPrice:"$57.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6903729795729911808/16477/goods_thumb_220-v1/b1045085f50c.jpg",
+            name:"Led projection illumination night light 3D moon light...",
+            price:"$6.99",
+            strikeOffPrice:"$10.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16480/goods_thumb_220-v1/0983ad6f67bc.jpg",
+            name:"Lenovo LP6 TWS Gaming headset 65ms Low Latency...",
+            price:"$34.99",
+            strikeOffPrice:"$50.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16474/goods_thumb_220-v1/e9c594af6ce0.jpg",
+            name:"Car Rear View Camera 4LED Night Vision Reversing...",
+            price:"$9.99",
+            strikeOffPrice:"$29.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16450/goods_thumb_220-v3/2d0a7335f9f2.jpg",
+            name:"Smartphones Note 10 Pro 4GB RAM 64GB ROM 3850mAh...",
+            price:"$100.99",
+            strikeOffPrice:"$125.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16457/goods_thumb_220-v3/266c3348ee56.jpg",
+            name:"Xiaomi Redmi Airdots s Original Xiaomi Airdots 2 with Bluetooth...",
+            price:"$11.99",
+            strikeOffPrice:"$16.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16424/goods_thumb_220-v3/23851778b03e.jpg",
+            name:"Wireless Bluetooth Speaker FM Radio Sound Box Desktop...",
+            price:"$12.99",
+            strikeOffPrice:"$18.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16414/goods_thumb_220-v1/4157898dac0e.jpg",
+            name:"Elistooop New Car Phone Holder in Car Air Vent Mount",
+            price:"$7.99",
+            strikeOffPrice:"$9.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16480/goods_thumb_220-v2/f021d7a9cf48.jpg",
+            name:"Lenovo LP40 PRO TWS Wireless Bluetooth 5.1 Headphone...",
+            price:"$19.99",
+            strikeOffPrice:"$28.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v5/274ab82c7554.jpg",
+            name:"KOSPET Optimus 2 4G Smart Watch Men 4GB 64GB 13MP...",
+            price:"$189.99",
+            strikeOffPrice:"$299.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16480/goods_thumb_220-v1/91363e298a05.jpg",
+            name:"Lenovo LP1 PRO TWS Bluetooth 5.1 Earphone Touch Control...",
+            price:"$28.99",
+            strikeOffPrice:"$41.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6882688590640508928/16425/goods_thumb_220-v3/030ab221ef1a.jpg",
+            name:"P30 Smart Watch Airbag Air Pump True Accurate Blood...",
+            price:"$109.99",
+            strikeOffPrice:"$168.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16480/goods_thumb_220-v1/f2c4144c9189.jpg",
+            name:"New Xiaomi Smart Doorbell 3 Camera Video 180° Field of...",
+            price:"$72.99",
+            strikeOffPrice:"$75.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16468/goods_thumb_220-v1/ad0d9ce47135.jpg",
+            name:"Xiaomi 2 in 1 Bluetooth 5.0 Speaker Dual Bass 30W MAX ",
+            price:"$52.99",
+            strikeOffPrice:"$79.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6878402251153666048/16465/goods_thumb_220-v1/d77234e23d7a.jpg",
+            name:"Original Xiaomi Mi Pad 5 Pro Magic TouchPad Keyboard",
+            price:"$103.99",
+            strikeOffPrice:"$212.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16465/goods_thumb_220-v1/eeb1c0f73034.jpg",
+            name:"ANBERNIC RG351P Retro Game Console RK3326 Linux System",
+            price:"$129.99",
+            strikeOffPrice:"$369.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v4/6d4bd7d52368.jpg",
+            name:"Ticwris Max 4G Smart Watch Phone Android 7.1 MTK6739",
+            price:"$149.99",
+            strikeOffPrice:"$202.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_thumb_220-v5/4a46d20383d6.jpg",
+            name:"New Smartwatch 2022 KOSPET TANK M1 Rugged Outdoor",
+            price:"$54.99",
+            strikeOffPrice:"$119.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16415/goods_thumb_220-v1/a1dfbf5e7df8.jpg",
+            name:"Blackview Laptop Acebook1 Intel Gemini Lake N4120",
+            price:"$364.99",
+            strikeOffPrice:"$500.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+    ];
+
+    ProductsAarr.map(function(el){
+        var innerbox = document.createElement("div");
+        innerbox.setAttribute("id","innerBox");
+        var img = document.createElement("img");
+        img.src = el.image;
+
+        var name = document.createElement("p");
+        name.innerText = el.name;
+
+        var price = document.createElement("p");
+        price.style.fontSize = "18px"
+        price.innerText = el.price;
+        price.style.color = "#f6575e"
+
+        var stOffdiv = document.createElement("div");
+        stOffdiv.setAttribute("id","stPrice")
+        var tag = document.createElement("p");
+        tag.innerText = "RRP :"
+        tag.style.fontSize = "12px"
+        tag.style.color = "#bec3c4"
+        var soprice = document.createElement("p");
+        soprice.style.textDecoration = "line-through"
+        soprice.style.fontSize = "12px"
+        soprice.style.color = "#bec3c4"
+        
+        soprice.innerText = el.strikeOffPrice;
+        stOffdiv.append(tag,soprice);
+
+        var cartIcon = document.createElement("div");
+        cartIcon.style.display = "flex"
+        cartIcon.style.justifyContent = "right"
+        var iconimg = document.createElement("img")
+        iconimg.src = el.iconImg
+        cartIcon.append(iconimg);
+        
+
+        innerbox.append(img,name,price,stOffdiv,cartIcon);
+        document.querySelector("#pro_container").append(innerbox);
+    })
+
+
+</script>
