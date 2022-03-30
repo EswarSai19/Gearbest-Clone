@@ -1,6 +1,47 @@
 body{
     background-color: #f2f2f2;
 }
+#head1 i{
+    margin: auto;
+}
+#heads{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+#cato{
+    display: flex;
+   width: 80%;
+   margin: auto;
+  background-color: white; 
+  padding-top: 20px; 
+ }
+ 
+ #cato>div{
+   display: flex;
+   width: 250px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+ }
+ #cato i{
+     margin: auto;
+     font-size: 16px;
+     color: black;
+    
+ }
+ #cato h4:hover{
+   text-decoration: underline 5px yellow;
+   cursor: pointer;
+ }
+ 
+#icon i {
+    margin: auto;
+}
+#sign i{
+    margin: auto;
+}
 #first_box{
     width: 92%;
     height: 100px;
@@ -85,6 +126,10 @@ i{
 #sorting{
     display: flex;
 }
+#sorting p:hover{
+    cursor: pointer;
+    color: #d1b8a4;
+}
 #sorting>div{
     margin-left: 10px;
     height: 30px;
@@ -117,7 +162,7 @@ i{
     display: flex;
     margin-top: -30px;
 }
-#third_box div:hover{
+#innerBox:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;            cursor: pointer;
 }
 #bottom_container{
@@ -203,6 +248,9 @@ h4{
     width: 95%;
     height: 400px;
     border: 1px solid;
+    margin: auto;
+}
+.bottom_box2_Soical_id i{
     margin: auto;
 }
 #line1{

@@ -1,5 +1,12 @@
 
     var ProductsAarr = [
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16433/goods_thumb_220-v1/9ba4ca2a3462.jpg",
+            name:"SAMEBIKE XWLX09 Foldable Electric Bicycle 500W 48V 10Ah...",
+            price:"$959.09",
+            strikeOffPrice:"$1334.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
          {
             image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16424/goods_thumb_220-v3/30698becca79.jpg",
             name:"Fast Charge 5A USB Type C Cable For Samsung S20 S9 S8...",
@@ -92,12 +99,13 @@
             iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
         },
         {
-            image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16433/goods_thumb_220-v1/9ba4ca2a3462.jpg",
-            name:"SAMEBIKE XWLX09 Foldable Electric Bicycle 500W 48V 10Ah...",
-            price:"$959.09",
-            strikeOffPrice:"$1334.59",
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16424/goods_thumb_220-v3/30698becca79.jpg",
+            name:"Fast Charge 5A USB Type C Cable For Samsung S20 S9 S8...",
+            price:"$4.40",
+            strikeOffPrice:"$6.28",
             iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
         },
+        
         {
             image:"https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16432/goods_thumb_220-v3/d7e0c670df9b.jpg",
             name:"ENGWE EP-2 PRO Folding Electric Bike 12.8Ah 750W Fat...",
@@ -232,6 +240,13 @@
             iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
         },
         {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878025592978206720/16433/goods_thumb_220-v1/e48a76c38fc7.jpg",
+            name:"2022 New KF106 RC Drone Visual Obstacal Avoidance 4K...",
+            price:"$79.99",
+            strikeOffPrice:"$82.29",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
             image:"https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16480/goods_thumb_220-v1/f2c4144c9189.jpg",
             name:"New Xiaomi Smart Doorbell 3 Camera Video 180° Field of...",
             price:"$72.99",
@@ -278,6 +293,27 @@
             name:"Blackview Laptop Acebook1 Intel Gemini Lake N4120",
             price:"$364.99",
             strikeOffPrice:"$500.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6903729795729911808/16477/goods_thumb_220-v1/b1045085f50c.jpg",
+            name:"Led projection illumination night light 3D moon light...",
+            price:"$6.99",
+            strikeOffPrice:"$10.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/store/6878028664286670848/16480/goods_thumb_220-v1/0983ad6f67bc.jpg",
+            name:"Lenovo LP6 TWS Gaming headset 65ms Low Latency...",
+            price:"$34.99",
+            strikeOffPrice:"$50.59",
+            iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
+        },
+        {
+            image:"https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16474/goods_thumb_220-v1/e9c594af6ce0.jpg",
+            name:"Car Rear View Camera 4LED Night Vision Reversing...",
+            price:"$9.99",
+            strikeOffPrice:"$29.59",
             iconImg : "https://uidesign.gbtcdn.com/GB/image/2019/20190417_9244/cart_default.png",
         },
     ];
