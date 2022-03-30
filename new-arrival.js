@@ -1,12 +1,12 @@
 var  newArrivalSliderArr =[
     {
-        productName :"Car Battery Charger ICS7+ EU - BE	1",
+        productName :"Car Battery Charger ICS7+ EU",
         productUrl:"https://gloimg.gbtcdn.com/soa/gb/item/6866331933228593152/16443/goods_img_big-v1/23170b180ca2.jpg",
         productPrice:"26.99",
         productStrickedPrice:"66.99",
     },
     {
-        productName :"Original Globla Newest Xiaomi Redmibook Pro 15",
+        productName :"Original Globla Newest Xiaomi Redmibook",
         productUrl:"https://gloimg.gbtcdn.com/soa/gb/item/6900746726869757952/16477/goods_img_big-v1/859c28741c91.jpg",
         productPrice:"1199.99",
         productStrickedPrice:"1538.99",
@@ -18,7 +18,7 @@ var  newArrivalSliderArr =[
         productStrickedPrice:"68.99",
     },
     {
-        productName :"Bezior XF200 Electric Bike E-bike 1000W Motor",
+        productName :"Bezior XF200 Electric Bike E-bike",
         productUrl:"https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16469/goods_img_big-v3/d2a5b9b13989.jpg",
         productPrice:"1599.25",
         productStrickedPrice:"1700.00",
@@ -229,8 +229,9 @@ newArrivalSliderArr.map(function (ele){
             var image = document.createElement("div");
             image.className = "image";
                  var imglink = document.createElement("img");
-                 imglink.setAttribute("src", ele.productUrl)
-                
+                 // imglink.setAttribute("src", ele.productUrl)
+                 imglink.src =  ele.productUrl;
+                 imglink.setAttribute("class","imglink")
                 image.append(imglink)
 
             card_info_img.append(rate, image)
