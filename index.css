@@ -43,7 +43,7 @@
           
        }
        
-       img{
+       .middleImg{
            height: 200px;
            width: 200px;
        }
@@ -85,6 +85,12 @@
         text-align: center;
         border-radius: 50%;
     }
+    /* middle part css end here */
+
+/* bottom part css start */
+
+
+
     .bottom_box1{
         height: auto;
         width: 90%;
@@ -258,4 +264,163 @@
         margin-bottom: 0px;
     }
    
+/* bottom page css end here */
+
+
+/* top part css start here */
+
+
     
+#head{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+   
+   
+}
+#head1{
+   display: flex;
+   justify-content: end;
+  
+}
+p{
+   margin-left: 30px;
+}
+select{
+   border: none;
+   outline: none;
+}
+#search{
+   display: flex;
+}
+#inp{
+   width: 350px;
+   height: 30px;
+   border: none;
+   outline: none;
+}
+#searchbar{
+   display: flex;
+   margin-left: 570px;
+   margin-top: -25px;
+}
+
+#sign{
+   display: flex;
+}
+#search{
+   border: 1px solid #ffda00;
+   height: 35px;
+   border-radius: 50px;
+
+}
+#sear{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffda00;
+   width: 40px;
+   border-top-right-radius: 50%;
+     border-bottom-right-radius: 50%;   
+}
+#head1>p{
+   color: #837e79;
+
+}
+#head1>p:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+#sign>p{
+   color: #837e79;
+   font-size: 16px;
+}
+#logo{
+margin-top: 30px;
+}
+#cat{
+   display: flex;
+  width: 80%;
+  margin: auto;
+ background-color: #ffda00;
+
+   
+}
+
+#cat>div{
+  display: flex;
+  width: 250px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+#cat h4:hover{
+  text-decoration: underline 5px;
+  cursor: pointer;
+
+
+}
+#black{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+ 
+}
+
+#headimag{
+  width: 100%;
+}
+select{
+  color: #837e79;
+}
+#category{
+  background-color:   #f3f3f5;
+  line-height: 28px;
+  width: 250px;
+  margin-left:150px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+#category>div:hover{
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: white;
+
+}
+#category>div{
+  padding-left: 5px;
+}
+#block{
+  display: flex;
+}
+#block>img{
+  width: 950px;
+  height: 420px;
+}
+#display{
+  display: flex;
+  width: 80%;
+  
+  margin: auto;
+  height: 200px;
+  margin-top: 10px;
+
+}
+#display>div{
+  height: 100%;
+  width: 100%;
+  margin-left: 5px;
+ 
+}
+#im{
+  width: 80%;
+  margin: auto;
+  margin-top: -20px;
+}
