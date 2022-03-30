@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Gearbest.com</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <style>
+        #headimag {
+            width: 100%;
+            height: 50px;
+            background-image: url(https://uidesign.gbtcdn.com/GB/image/9599/%E9%A1%B6%E9%80%9A%E6%9D%A1%E5%B9%85+1920X60+en.jpg);
+        }
+        #head{
+        display: flex;
+        justify-content: space-between;
+        width: 96%;
+        margin: auto;
+    }
+    #head1{
+    display: flex;
+    justify-content: end;
+    gap: 9px;
+    font-size: 14px;
+    margin-top: 9px;
+    
+    }
+    p{
+    margin-left: 30px;
+    }
+    select{
+    border: none;
+    outline: none;
+    }
+    #search{
+    display: flex;
+    }
+    #inp{
+    width: 350px;
+    height: 30px;
+    border: none;
+    outline: none;
+    }
+    #searchbar{
+    display: flex;
+    margin-left:40%;
+    margin-top: -14px;
+    gap: 30px;
+    justify-content: space-around;
+    }
+
+    #sign{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    }
+    #search{
+    border: 1px solid #ffda00;
+    height: 35px;
+    border-radius: 50px;
+
+    }
+    #sear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffda00;
+    width: 40px;
+    border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;   
+    }
+    #head1>p{
+    color: #837e79;
+
+    }
+    #head1>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    #sign>p{
+    color: #837e79;
+    font-size: 16px;
+    }
+    #logo{
+    text-align: left;
+    }
+    #cat{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    }
+
+    #cat>div{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    }
+    #cat h4:hover{
+    text-decoration: underline 5px yellow;
+    cursor: pointer;
+    
+
+
+    }
+    #black{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    
+    }
+
+    
+        .aboutpage_img1 {
+            background: url('https://uidesign.gbtcdn.com/GB/image/2019/20190226_7817/top_banner.jpg') top center no-repeat;
+            height: 340px;
+            width: 100%;
+        }
+        body,div,section,ul,li,p{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .aboutUs_main{
+            min-width: 1200px;
+        }
+        .aboutUsContent{
+            width: 100%;
+        }
+        .aboutGB,
+        .section_selection{
+            width: 1194px;
+            margin: 0 auto;
+        }
+        .titleStyle{
+            font-family: OpenSans-Bold,Arial,Helvetica,sans-serif;
+        }
+        .descStyle{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .aboutUsTitle{
+            height: 44px;
+            line-height: 44px;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        .aboutGB{
+            margin-top: 80px;
+        }
+        .aboutGBTitle{
+            width: 1194px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .aboutGB_ul{
+            font-size: 0;
+            margin-right: -10px;
+        }
+        .aboutGB_li{
+            display: inline-block;
+            width: 162px;
+            height: 150px;
+            margin-right: 10px;
+        }
+        .aboutGB_img{
+            display: inline-block;
+            width: 162px;
+            height: 115px;
+        }
+        .aboutUsText{
+            font-size: 12px;
+            height: 17px;
+            line-height: 17px;
+            width: 162px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .section_selection{
+            margin-top: 80px;
+        }
+        .aboutUsImgTitle{
+            position: relative;
+        }
+        .titleImg{
+            display: inline-block;
+            height: 87px;
+            width: 91px;
+        }
+        .imgTitle{
+            position: absolute;
+            top: 37px;
+            left: 51px;
+        }
+        .selectionMiddle{
+            width: 1194px;
+            height: 200px;
+            font-size: 0;
+            margin-top: 33px;
+        }
+        .selectionText{
+            display: inline-block;
+            width: 580px;
+            margin: 0 47px;
+            height: 200px;
+            vertical-align: bottom;
+        }
+        .textDesc {
+            margin-top: 14px;
+        }
+        .selectionPic{
+            display: inline-block;
+            width: 520px;
+            height: 200px;
+        }
+        .selectionPic img{
+            display: inline-block;
+            width: 520px;
+            height: 200px;
+        }
+        .smallTitle{
+            font-size: 18px;
+            height: 24px;
+            line-height: 24px;
+            margin-top: 7px;
+        }
+        .selectionBottom{
+            width: 904px;
+            margin: 0 auto;
+        }
+        .textCenter{
+            text-align: center;
+        }
+        .selectionBottomImg{
+            display: inline-block;
+            width: 850px;
+            height: 217px;
+            margin: 27px;
+            margin-bottom: 0;
+        }
+        .section_price{
+            margin-top: 81px;
+            width: 100%;
+            height: 410px;
+            background-color: #FFFBED;
+        }
+        .section_priceWrap{
+            width: 1194px;
+            margin: 0 auto;
+        }
+        .sectionPriceText{
+            display: inline-block;
+            width: 638px;
+            height: 301px;
+            margin-top: 70px;
+            vertical-align: bottom;
+        }
+        .sectionPriceImg{
+            display: inline-block;
+            width: 502px;
+            height: 301px;
+            margin-top: 57px;
+        }
+        .sectionPriceImg img{
+            width: 502px;
+            height: 301px;
+        }
+        .sectionPrice_p{
+            margin-left: 37px;
+            width: 520px;
+        }
+        .sectionPrice_smallTitle{
+            margin-top: 40px;
+        }
+        .section_brands{
+            margin-top: 110px;
+        }
+        .brandsImgTitle{
+            width: 360px;
+            margin: 0 auto;
+        }
+        .sectionBrands_p{
+            width: 955px;
+            margin: 0 auto;
+            margin-top: 44px;
+        }
+        .sectionBrandImg{
+            width: 1197px;
+            height: 407px;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+        .sectionBrandImg img{
+            display: inline-block;
+            width: 1197px;
+            height: 407px;
+        }
+        .section_express{
+            margin-top: 110px;
+        }
+        .expressImgTitle{
+            width: 440px;
+            margin: 0 auto;
+        }
+        .expressDelivery{
+            width: 692px;
+            margin: 0 auto;
+            margin-top: 41px;
+        }
+        .expressDelivery img{
+            display: inline-block;
+            width: 493px;
+            height: 60px;
+        }
+        .expressDesc{
+            text-align: center;
+            margin-top: 28px;
+        }
+        .expressSmallTitle{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 55px;
+        }
+        .electionCutOffRule{
+            border: 1px dashed #e0e0e0;
+            width: 1198px;
+            margin: 21px auto;
+            border-bottom: 0;
+        }
+        .cutOffRule{
+            border: 1px dashed #e0e0e0;
+            width: 1098px;
+            margin: 40px auto;
+            border-bottom: 0;
+        }
+        .expressImg{
+            width: 1124px;
+            margin: 0 auto;
+        }
+        .expressImg img{
+            display: inline-block;
+            width: 1124px;
+            height: 150px;
+        }
+        .expressImgSmallTitle{
+            width: 1124px;
+            text-align: center;
+            margin-bottom: 34px;
+        }
+        .expressBtn{
+            width: 351px;
+            height: 46px;
+            background-color: #FFDA00;
+            margin: 0 auto;
+            margin-top: 41px;
+        }
+        .expressBtn:hover{
+            background-color: #f2ce00;
+        }
+        .expressBtnDesc{
+            font-family: OpenSans-Bold,Arial,Helvetica,sans-serif;
+            color: #000;
+            font-size: 16px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+        }
+        .section_warehouse{
+            margin-top: 111px;
+        }
+        .warehouseImgTitle{
+            width: 1190px;
+            margin: 0 auto;
+        }
+        .warehouseImg{
+            margin-top: 24px;
+            width: 100%;
+            height: 282px;
+            background: url('https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/05_banner.jpg') top center no-repeat;
+            padding-top: 118px;
+        }
+        .warehouseImgWrap{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .warehouseText{
+            width: 548px;
+            height: 163px;
+        }
+        .warehouseTitle{
+            font-family: OpenSans-Bold,Arial,Helvetica,sans-serif;
+            font-size: 24px;
+            height: 33px;
+            line-height: 33px;
+            color: #fff;
+        }
+        .warehouseDesc{
+            font-size: 14px;
+            color: #fff;
+            line-height: 24px;
+            margin-top: 25px;
+        }
+        .section_security{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .section_security{
+            margin-top: 110px;
+        }
+        .securityDesc{
+            margin-top: 29px;
+            text-align: center;
+        }
+        .securityImgTitle{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .security_ul{
+            font-size: 0;
+            margin-right: -30px;
+            margin-top: 25px;
+        }
+        .security_li{
+            display: inline-block;
+            margin-right: 30px;
+        }
+        .security_li img{
+            display: inline-block;
+            width: 380px;
+            height: 173px;
+        }
+        .security_liDesc{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .securityBtn{
+            height: 40px;
+        }
+        .section_purchase{
+            width: 1140px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+        .purchaseImgTitle{
+            width: 480px;
+            margin: 0 auto;
+        }
+        .purchaseWrap{
+            display: inline-block;
+            height: 311px;
+            margin-top: 44px;
+            margin-bottom: 80px;
+        }
+        .purchase_left{
+            display: inline-block;
+            width: 602px;
+            height: 311px;
+            box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.05);
+            vertical-align: bottom;
+        }
+        .purchase_center{
+            display: inline-block;
+            height: 311px;
+        }
+        .verticalCutOffRule{
+            display: inline-block;
+            border: 1px dashed #e0e0e0;
+            height: 199px;
+            border-right: 0;
+            border-bottom: 0;
+            margin: 55px 66px;
+        }
+        .purchase_ul{
+            font-size: 0;
+            margin-left: 20px;
+            margin-right: -12px;
+        }
+        .purchase_li{
+            display: inline-block;
+            width: 166px;
+            text-align: center;
+            margin-right: 32px;
+            margin-top: 16px;
+        }
+        .purchase_count{
+            font-size: 54px;
+            height: 74px;
+            line-height: 74px;
+            font-family: OpenSans-Bold,Arial,Helvetica,sans-serif;
+            color: #FFDA00;
+        }
+        .purchase_style{
+            font-size: 20px;
+            height: 27px;
+            line-height: 27px;
+            font-family: OpenSans-Bold,Arial,Helvetica,sans-serif;
+            color: #000;
+        }
+        .purchase_line{
+            width: 24px;
+            height: 4px;
+            background-color: #FFDA00;
+            margin: 0 auto;
+            margin-top: 13px;
+            margin-bottom: 12px;
+        }
+        .purchase_desc{
+            height: 19px;
+            line-height: 19px;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .purchaseBtn{
+            margin-top: 30px;
+            height: 40px;
+        }
+        .purchase_right{
+            display: inline-block;
+            width: 395px;
+            height: 311px;
+            vertical-align: bottom;
+            box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.05);
+        }
+        .right_count{
+            text-align: center;
+            margin-top: 32px;
+        }
+        .right_line{
+            background-color: #000;
+        }
+        .purchaseBtnRight{
+            margin-top: 46px;
+            height: 40px;
+        }
+        .securityBtn .expressBtnDesc,
+        .purchaseBtn .expressBtnDesc,
+        .purchaseBtnRight .expressBtnDesc{
+            height: 40px;
+            line-height: 40px;
+        }
+        .purchase_descRight{
+            margin-top: 0;
+        }
+        .descRight{
+            margin-top: 21px;
+        }
+
+        body {
+            background-color: #fafafa;
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .bottom_box1{
+            height: auto;
+            width: 90%;
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            justify-content:space-around;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .bottom_box1_logo  div img {
+            height: 43px;
+            width: 200px;
+        }
+        .bottom_box1_logo div h3 {
+           font-size: 14px;
+           text-align: center;
+           margin-top: 4px;
+        }
+        .bottom_box1_1 {
+            text-align: center;
+        }
+        .bottom_box1_1 > .bottom_box1_text{
+            font-size: 8px;
+            margin-top: -8px;
+        }
+        .bottom_box1_1 > .bottom_box1_text1{
+            font-size: 14px;
+            margin-top: -10px;
+            color: gray;
+        }
+        .fa-solid {
+            color: gray;
+        }
+        .fa-solid:hover{
+            color: rgb(231, 193, 66);
+            cursor: pointer;
+        } 
+        .bottom_box1_text:hover{
+            color: rgb(231, 193, 66);
+            cursor: pointer;
+        } 
+        
+        .bottom_box2 {
+            height: 60px;
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottom_box2_text {
+            font-size: 16px;
+            font-weight: bold;
+            color: gray;
+        }
+        .bottom_box2_email {
+            height: 40px;
+            width: 300px;
+        }
+        .bottom_box2_btn {
+            height: 42px;
+            width: 121px;
+            background-color: black;
+            color: white;
+            
+            border: none;
+        }
+        .bottom_box2_btn:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+        .bottom_box2_Soical_id  {
+            display: flex;
+            gap: 16px;
+            text-align: center;
+        }
+        .bottom_box2_Soical_id >div {
+            border-radius: 50px;
+            height: 20px;
+            width: 20px;
+            padding: 4px;
+            background-color: #464646;
+            
+        }
+        .fa-brands {
+            color: white;
+        }
+        .icon-fb:hover {
+            background-color: rgb(94, 85, 219);
+        }
+        .icon-mess:hover {
+            background-color: rgb(44, 138, 201);
+        }
+        .icon-y:hover {
+            background-color: red;
+        }
+        .icon-p:hover {
+            background-color: rgb(211, 32, 47);
+        }
+        .icon-vk:hover {
+            background-color: rgba(30, 60, 124, 0.863);
+        }
+        .icon-insta:hover {
+            background-color: rgb(44, 138, 201);
+        }
+        .icon-twi:hover {
+            background-color: rgb(44, 138, 201);
+        }
+        .icon-blo:hover {
+            background-color: rgba(231, 231, 48, 0.884);
+        }
+        .icon-tu:hover {
+            background-color: rgba(185, 175, 175, 0.692);
+        }
+        .bottom_box3 {
+            margin-top: 30px;
+            height: 300px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            
+            gap: 25px;
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: #978e87;
+            line-height: 18px;
+        }
+        .bottom_box3_1 {
+            line-height: 5px;
+            font-size: 14px;
+        }
+        .bottom_box3_1a p{
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .bottom_box3_2 {
+            display: flex; 
+            gap: 10px;
+        }
+        .bottom_box3_2img {
+            height: 50px;
+            width: 180px;
+        }
+        .bottom_box3_2a {
+            display: grid;
+        }
+        .bottom_box4 {
+            height: 90px;
+            margin-top: 19px;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .footer_text{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            height: 28px;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+            
+    </style>
+</head>
+<body>
+
+     <!-- top part html start -->
+     <div>
+        
+        <div id="headimag"> </div> 
+        <div id="head">
+            <div id="logo">
+                <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" width="230px" height="50px">
+            </div>
+            <div id="head1">
+                <p><span><i class="fa-solid fa-mobile-screen-button"></i></span><span> Save $3 with app</span><span><select name="" id="app"></select></span></p>
+                <p>Support Center</p>
+                <p>Ship to <span><img src="https://uidesign.gbtcdn.com/GB/app/2018/flag_png/us.png" alt="" width="25px" height="15px"> /USD</span><select name=""></select></p>
+                <p>Language<span><select name="" id=""></select></span></p>
+                <p>Country Website<select name="" id=""></select></p>
+            </div>
+           
+        </div>
+        <div id="searchbar">
+            <div id="search">
+                <div id="sear"><p>All</p></div>
+                <select name="All" id=""></select>
+                <input id="inp" type="text">
+                <div id="icon"><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+            
+            </div>
+        <div id="sign">
+            <div><p><span><i class="fa-solid fa-user"></i></span>Sign in</p> </div>
+            <div><p><span><i class="fa-solid fa-heart"></i></i></span> Favourites</p> </div>
+            <div><p><span><i class="fa-solid fa-cart-arrow-down"></i></span> Cart</p> </div>
+        </div>
+        
+        </div>  
+        
+        <div id="cat">
+            <div id="black"><span><i class="fa-solid fa-bars"></i></span><h4>Category</h4></div>
+            <div><h4>SUPER DEALS</h4></div>
+            <div><h4>APP ONLY</h4></div>
+            <div><h4>NEW ARRIVALS</h4></div>
+        </div>
+    
+    <div class="aboutpage_img1"> 
+        <!-- <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190226_7817/top_banner.jpg" alt=""> -->   
+    </div> 
+    <div class="aboutUsContent"> 
+        <section class="aboutGB"> <p class="aboutUsTitle aboutGBTitle titleStyle">About Gearbest</p> 
+            <ul class="aboutGB_ul"> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic01.jpg"> <p class="aboutUsText titleStyle">High-quality Selection</p> </li> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic02.jpg"> <p class="aboutUsText titleStyle">Affordable Price</p> </li> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic03.jpg"> <p class="aboutUsText titleStyle">Various Brands</p> </li> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic04.jpg"> <p class="aboutUsText titleStyle">Convenient Express</p> </li> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic05.jpg"> <p class="aboutUsText titleStyle">Global Warehouses</p> </li> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic06.jpg"> <p class="aboutUsText titleStyle">Payment Security</p> </li> 
+                <li class="aboutGB_li"> <img class="aboutGB_img" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/pic07.jpg"> <p class="aboutUsText titleStyle">Worry-free Shopping</p> </li> 
+            </ul> 
+        </section> 
+        <section class="section_selection"> 
+            <div class="aboutUsImgTitle"> <img class="titleImg" 
+                src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.01.png"> 
+                <p class="aboutUsTitle imgTitle titleStyle">High-quality Selection</p> 
+            </div> 
+            <div class="selectionMiddle"> 
+                <div class="selectionText"> <p class="smallTitle titleStyle">Strict Selection of High-quality Suppliers</p> 
+                    <p class="textDesc descStyle"> Gearbest, as a strategic brand product of the renowned Chinese cross-border 
+                        enterprise Globalegrow, is backed by abundant funds and resources. Suppliers on Gearbest are managed 
+                        through a professional rating system to select top suppliers and optimize the procurement of quality 
+                        goods, while at the same time, maintian the comprehensiveness of product categories.
+                    </p> 
+                </div> 
+                    
+                <div class="selectionPic"> <img class="selectionImg" 
+                    src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/01_banner.jpg"> 
+                </div> 
+            </div> 
+                    
+            <div class="electionCutOffRule"></div> 
+            <div class="selectionBottom"> <p class="smallTitle titleStyle textCenter">Comprehensive Quality Control</p> 
+                <p class="textDesc descStyle textCenter">Through the comprehensive quality control, all 
+                    products are guaranteed to be genuine. Gearbest strictly follows five steps of CITST 
+                    quality control, namely Checking suppliers, Inspecting production, Testing sample quality, 
+                    Spot-checking products, Tracking after sales, ensuring all products meet a consistant quality standard 
+                    and users' requirements.
+                </p> 
+                <img class="selectionBottomImg" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/recheck_pic.jpg"> 
+            </div> 
+        </section> 
+        <section class="section_price"> 
+            <div class="section_priceWrap"> 
+                <div class="sectionPriceText"> 
+                    <div class="aboutUsImgTitle"> <img class="titleImg"
+                        src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.02.png"> 
+                        <p class="aboutUsTitle imgTitle titleStyle">Affordable Prices</p> 
+                    </div> 
+                    <p class="smallTitle titleStyle sectionPrice_p sectionPrice_smallTitle">Direct Procurement, Best Price</p> 
+                    <p class="textDesc descStyle sectionPrice_p">Supported by Globalegrow's premium supply chains 
+                        and self-built supplier repository, Gearbest has got advantage and independence in pricing, 
+                        providing the cost-effecient products with great quality to global users.
+                    </p> 
+                </div> 
+                    
+                <div class="sectionPriceImg"> 
+                    <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/traditional_channels.png"> 
+                </div> 
+            </div> 
+            
+        </section> 
+        <section class="section_brands"> 
+            <div class="aboutUsImgTitle brandsImgTitle"> 
+                <img class="titleImg" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.03.png"> 
+                <p class="aboutUsTitle imgTitle titleStyle">Various Brands</p> 
+            </div> 
+            <p class="textDesc descStyle sectionBrands_p textCenter">Gearbest works closely with over 5,000 famous 
+                Chinese brands and top suppliers, including over 1,000 top brands like Xiaomi, Lenovo, Huawei. 
+                Gearbest has got over 1 million SKUs online, more than 1,000 per day, providing plentiful shopping options for users.
+            </p> 
+            <div class="sectionBrandImg"> 
+                <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/logo_brand.jpg"> 
+            </div> 
+        </section> 
+        <section class="section_express"> 
+            <div class="aboutUsImgTitle expressImgTitle"> 
+                <img class="titleImg" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.04.png"> 
+                <p class="aboutUsTitle imgTitle titleStyle">Convenient Express</p> 
+            </div> 
+            <div class="expressDelivery"> 
+                <p class="smallTitle titleStyle expressSmallTitle">Global Delivery</p> 
+                <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/04_pic.jpg"> 
+            </div> 
+            <p class="textDesc descStyle expressDesc"> Gearbest provides the most cost-efficient delivery service 
+                covering 200+ countries and regions, most of which enjoy free door-to-door delivery.
+            </p> 
+            <div class="cutOffRule"></div> 
+            <div class="expressImg"> 
+                <p class="smallTitle titleStyle expressImgSmallTitle">Cross-border Special Line, 5-day Delivery</p> 
+                <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/04_delivery.jpg"> 
+                <div class="expressBtn"> <a class="expressBtnDesc" 
+                    href="https://www.gearbest.com/about/shipping-methods.html">Know shipping information</a> 
+                </div> 
+            </div> 
+        </section> 
+        <section class="section_warehouse"> 
+            <div class="aboutUsImgTitle warehouseImgTitle"> 
+                <img class="titleImg" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.05.png"> 
+                <p class="aboutUsTitle imgTitle titleStyle">Global Warehouses</p> 
+            </div> 
+            <div class="warehouseImg"> 
+                <div class="warehouseImgWrap"> 
+                    <div class="warehouseText"> <p class="warehouseTitle">46 Warehouses Worldwide.</p> 
+                        <p class="warehouseTitle">1 - 2 Days Delivery</p> 
+                        <p class="warehouseDesc"> Gearbest warehouses are located in USA, Spain, England, Poland, 
+                            Czech Republic, and etc., which helps reduce the delivery time to only 1 - 2 days and 
+                            provides more efficient and convenient after-sales services for global users. 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </section> 
+        <section class="section_security"> 
+            <div class="aboutUsImgTitle securityImgTitle"> 
+                <img class="titleImg" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.06.png"> 
+                <p class="aboutUsTitle imgTitle titleStyle">Payment Security</p> 
+            </div> 
+            <p class="textDesc descStyle securityDesc"> Gearbest provides over 40 global payment methods for the 
+                convenience of worldwide users. Gearbest risk control system ensures your payment security.
+            </p> 
+            <ul class="security_ul"> 
+                <li class="security_li"> <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/06_pic01.jpg" > 
+                    <p class="textDesc descStyle security_liDesc">International Payment</p> 
+                </li> 
+                <li class="security_li"> <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/06_pic02.jpg" > 
+                    <p class="textDesc descStyle security_liDesc">Local Payment</p> 
+                </li> 
+                <li class="security_li"> <img src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/06_pic03.jpg" > 
+                    <p class="textDesc descStyle security_liDesc">Multi-currency Transaction</p> 
+                </li> 
+            </ul> 
+            <div class="expressBtn securityBtn"> 
+                <a class="expressBtnDesc" href="https://www.gearbest.com/about/payment-methods.html">Learn about payment</a> 
+            </div> 
+        </section> 
+        <section class="section_purchase"> 
+            <div class="aboutUsImgTitle purchaseImgTitle"> 
+                <img class="titleImg" src="https://uidesign.gbtcdn.com/GB/image/2019/20190222_7817/no.07.png"> 
+                <p class="aboutUsTitle imgTitle titleStyle">Worry-free Purchase</p> 
+            </div> 
+            <div class="purchaseWrap"> 
+                <div class="purchase_left"> 
+                    <ul class="purchase_ul"> 
+                        <li class="purchase_li"> <p class="purchase_count">30</p> 
+                            <p class="purchase_style">Days</p> <p class="purchase_line"></p> 
+                            <p class="descStyle purchase_desc">No Reason to Return/Exchange</p> 
+                        </li> 
+                        <li class="purchase_li"> <p class="purchase_count">45</p> 
+                            <p class="purchase_style">Days</p> <p class="purchase_line"></p> 
+                            <p class="descStyle purchase_desc">Guaranteed Refund for Quality Problems</p> 
+                        </li> 
+                        <li class="purchase_li"> <p class="purchase_count">1</p> 
+                            <p class="purchase_style">Year</p> <p class="purchase_line"></p> 
+                            <p class="descStyle purchase_desc">Warranty for Free Repairs</p> 
+                        </li> 
+                    </ul> 
+                    <div class="expressBtn purchaseBtn"> 
+                        <a class="expressBtnDesc" href="https://www.gearbest.com/about/warranty-and-return.html">Learn more about after-sales policy</a> 
+                    </div> 
+                </div> 
+                <div class="purchase_center"> 
+                    <div class="verticalCutOffRule"></div> 
+                </div> 
+                <div class="purchase_right"> 
+                    <p class="purchase_count right_count">24/7</p> 
+                    <p class="purchase_line right_line"></p> 
+                    <p class="descStyle purchase_desc descRight">24/7 Customer Service</p> 
+                    <div class="expressBtn purchaseBtnRight"> 
+                        <a class="expressBtnDesc" href="https://support.gearbest.com">One-click access</a> 
+                    </div> 
+                    <p class="descStyle purchase_desc">Email: support@gearbest.com</p> 
+                </div> 
+            </div> 
+        </section> 
+    </div> 
+    <div class="bottom_box1">
+        <div class="bottom_box1_logo">
+            <div>
+                <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png" alt="GearBest"/>
+                <h3 class="footerLogo_text">AFFORDABLE QUALITY<br/> FUN SHOPPING</h3> 
+            </div>
+
+        </div>
+        <div class="bottom_box1_1">
+            <div class="bottom_box1_icon"> <i class="fa-solid fa-store"></i>  </div>
+            <div class="bottom_box1_text">
+                <h1>High Quality Selection</h1>
+            </div>
+            <div class="bottom_box1_text1">
+                <p>Total product quality <br> control for peace of mind</p>
+            </div>
+        </div>
+        <div class="bottom_box1_1">
+            <div class="bottom_box1_icon"> <i class="fa-solid fa-hand-holding-dollar"></i> </div>
+            <div class="bottom_box1_text">
+                <h1>Affordable Prices</h1>
+            </div>
+            <div class="bottom_box1_text1">
+                <p>Factory direct prices for <br> maximum savings</p>
+            </div>
+        </div>
+        <div class="bottom_box1_1">
+            <div class="bottom_box1_icon"> <i class="fa-solid fa-truck-fast"></i>  </div>
+            <div class="bottom_box1_text">
+                <h1>Express Shipping</h1>
+            </div>
+            <div class="bottom_box1_text1">
+                <p>Fast, reliable delivery from <br> global warehouses</p>
+            </div>
+        </div>
+        <div class="bottom_box1_1">
+            <div class="bottom_box1_icon"> <i class="fa-solid fa-star"></i>  </div>
+            <div class="bottom_box1_text">
+                <h1>Worry-free After-sales</h1>
+            </div>
+            <div class="bottom_box1_text1">
+                <p>Instant access to <br> professional support</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom_box2">
+        <div class="bottom_box2_subs">
+            <span class="bottom_box2_text">Newsletter</span> 
+            <span><input type="email" class="bottom_box2_email"placeholder="Enter Email to get 50 Points"/> </span> 
+            <button type="submit" class="bottom_box2_btn"> Subscribe </button> 
+        </div>
+        <div class="bottom_box2_Soical_id">
+                <div class="icon-fb"><a  href="https://www.facebook.com/Gearbestshopping">  <i class="fa-brands fa-facebook-f"></i> </a> </div>
+                <div class="icon-mess"><a  href="https://goo.gl/qXtLAh"> <i class="fa-brands fa-facebook-messenger"></i> </a></div> 
+                <div class="icon-y"><a  href="https://www.youtube.com/user/TheGearBest"> <i class="fa-brands fa-youtube"></i> </a></div> 
+                <div class="icon-p"><a  href="https://www.pinterest.com/gearbestlife/"> <i class="fa-brands fa-pinterest"></i> </a></div> 
+                <div class="icon-vk"><a  href="https://vk.com/gearbest"> <i class="fa-brands fa-vk"></i> </a></div> 
+                <div class="icon-insta"><a  href="https://www.instagram.com/gearbest/"> <i class="fa-brands fa-instagram"></i> </a></div> 
+                <div class="icon-twi"><a  href="https://twitter.com/TheGearbest/"> <i class="fa-brands fa-twitter"></i> </a></div> 
+                <div class="icon-blo"><a  href="https://www.gearbest.com/blog/"> <i class="fa-brands fa-blogger"></i> </a></div> 
+                <div class="icon-tu"><a  href="http://bit.ly/2LadoyE"> <i class="fa-brands fa-tumblr"></i> </a></div> 
+        </div>
+    </div>
+    <div class="bottom_box3">
+        <div class="bottom_box3_1">
+            <h4>Company Information</h4> 
+            <p> <a  href="https://www.gearbest.com/about/about-us.html"> About Us </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/top-searches/"> Top Searches </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/privacy-policy.html"> Privacy Policy </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/terms-and-conditions.html"> Terms and Conditions </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/Intellectual-Property-Policy.html"> Intellectual Property Policy </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/testimonials.html"> Testimonials </a> </p>
+            <p> <a  href="https://www.gearbest.com/about/contactus.html"> Contact Us </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/report-security-issue.html"> Report Security Issu </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/suppliers"> Sell on Gearbest</a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/cookie-policy.html"> Cookies Policy </a> </p> 
+            <p> <a  href="https://www.gearbest.com/top-brands.html"> Top Brand </a> </p> 
+            <p> <a  href="https://www.gearbest.com/blog/"> Gearbest Official Blog </a> </p> 
+        </div>
+        <div class="bottom_box3_1">
+            <h4>Customer Service</h4> 
+            <p> <a  href="https://www.gearbest.com/about/shipping-methods.html"> Shipping Information </a> </p> 
+            <p> <a  href="https://user.gearbest.com/index#/favor/goods"> My Favorites </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/faq-for-newsletter-subscription.html"> FAQ For Newsletter Subscription </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/about-points.html"> My Points </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/warranty-and-return.html"> Warranty and Return </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/payment-methods.html"> Payment Methods </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/deposit.html"> Deposit Expansion </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/faq.html"> FAQ &amp; Support </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/sitemap.html"> Sitemap </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/gb-wallet.html"> Gearbest Wallet Instruction </a> </p> 
+            <p> <a  href="https://www.gearbest.com/about/faqs-about-covid-19.html"> FAQs about COVID-19 </a> </p> 
+        </div>
+        <div class="bottom_box3_1">
+            <h4>Other Business</h4> 
+            <p> <a  href="https://www.gearbest.com/about/make-money.html"> Partnership Programs </a> </p> 
+            <p> <a  href="https://affiliate.gearbest.com/"> Associate Program </a> </p> 
+        </div>
+        <div>
+            <div class="bottom_box3_1">
+                <div class="bottom_box3_1a">
+                    <h4>Download App! </h4> 
+                    <p>Save $3 with App & New User Only</p> 
+                </div> 
+                
+               <div class="bottom_box3_2">
+                   <div>
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxY7UlAzg46TshUmYfmtIHGMNWcUbKZRk4WOfBfjVNqZZgCpB" alt="">
+                   </div>
+                   <div class="bottom_box3_2a">
+                       <img class="bottom_box3_2img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRydcgqVJDE-R141giWLw0mVnIW8x7-ZJy2_UIUe4UmtmMh4QX6" alt=""> 
+                       <img class="bottom_box3_2img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWOrVNSgVtjivIC-fXrjwVexAML-wYdoZC7TfrSUT7GNgtm5rz" alt="">
+                   </div>
+               </div>
+            </div> 
+        </div> 
+    </div>
+    <div class="bottom_box4">
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/money.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/m.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/rese.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/paypal.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/visa.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/a.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ww.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/jcb.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/dic.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ya.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/d.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/qiwi.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/oxxo.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/webmoney.png"> </a> <br>
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/bo.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/postepay.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/giropay.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/sofort.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/eps.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/p.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/pago.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png"> </a> 
+        <a> <img src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png"> </a> 
+    </div>
+    <footer><p class="footer_text"> Copyright © 2014-2021 Gearbest.com. All Rights Reserved. </p> </footer>
+</body>
+</html>
