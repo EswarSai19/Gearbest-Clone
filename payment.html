@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .payment_head {
+            width: 100%;
+            height: 93px;
+            /* border: 1px solid black; */
+            margin-top: -5px;
+            padding: 19px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .payment_head > img {
+            margin-left: 10%;
+            height: 52px;
+            width: 230px;
+        }
+        .payment_method {
+            width: 100%;
+            height: 700px;
+            background-color: #f2f2f2;
+            /* border: 1px solid black; */
+            padding: 50px 0px 30px 0px;
+            box-sizing: border-box;
+           
+           
+        }
+        .payment_method_box {
+            margin: auto;
+            width: 75%;
+            display: flex;
+            gap: 20px;
+            /* margin-top: 60px; */
+        }
+        .payment_method_boxa{
+            height: 588px;
+            width: 640px;
+            background-color: white;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        }
+        .payment_method_boxa1{
+            width: 100%;
+            height: 61px;
+            /* margin-top: -20px; */
+            background-color: #f9f9f9;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-top: 1px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            box-sizing: border-box;
+        }
+        .payment_method_boxa2{
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid red; */
+            gap: 38px;
+            margin-top: 17px;
+            margin-left: 24px;
+        }
+        .payment_method_boxa2img{
+            height: 35px;
+            width: 57px;
+        }
+        .payment_method_boxa3 {
+            width: 571px;
+            height: 380px;
+            padding: 20px 10px 0px 20px;
+            margin: 17px 0px 0px 27px;
+            border: pink;
+            /* box-sizing: border-box; */
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            /* background-color: aquamarine; */
+        }
+
+
+        .payment_method_boxb{
+            height: 329px;
+            width: 340px;
+            background-color: white;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        }
+        .payment_method_boxb1{
+            width: 100%;
+            height: 61px;
+            background-color: #f9f9f9;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-top: 1px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            box-sizing: border-box;
+        }
+        .payment_method_boxb2{
+            line-height: 1px;
+            padding-left: 30px;
+            box-sizing: border-box;
+            padding-bottom: 2px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        }
+        .payment_method_boxb3p {
+            display: flex;
+            justify-content: space-between;
+            line-height: 0px;
+            padding-left: 30px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        .payment_paynow_btn{
+            background-color: #ffda00;
+            height: 40px;
+            border: none;
+            width: 87%;
+            margin-top: 15px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .payment_paynow_btn:hover {
+            cursor: pointer;
+        }
+
+
+        .payment_bottom{
+            height: 135px;
+            width: 100%;
+            background-color: #ffffff;
+            text-align: center;
+            color: #999999;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 2%;
+            box-sizing: border-box;
+            margin-bottom: -6px;
+        }
+        input {
+          background-color: white;
+          font-size: 20px;
+          width: 80%;
+          height: 45px;
+          padding-left: 9px;
+          box-sizing: border-box;
+      }
+      input:hover {
+          cursor:text ;
+      }
+      .payment_method_boxa3_add{
+          margin-top: -15px;
+      }
+      .payment_method_boxa3_add > h2 {
+          font-size: 19px;
+          margin-bottom: 26px;
+      }
+      .payment_method_boxa3_add1_p1 , .payment_method_boxa3_add1_p2{
+          margin-top: -10px;
+      }
+      .payment_method_boxa3_add1_p1 {
+          font-size: 17px;
+      }
+      .payment_method_boxa3_add1_p2 {
+          font-size: 15px;
+          color: #999999;
+      }
+    </style>
+</head>
+<body>
+    <div class="payment_head">
+        <img src="https://uidesign.gbtcdn.com/GB/image/other/20190117_7271/Group_45.png" alt="">
+    </div>
+    <div class="payment_method">
+        <div class="payment_method_box">
+
+            <div class="payment_method_boxa">
+                <div class="payment_method_boxa1">
+                    <p>Payment Method(s)</p>
+                </div>
+                <div class="payment_method_boxa2">
+                    <a><i class="fa-regular fa-square-check"></i></a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/5376/20210323_visa.png"> </a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/checkout/20190816_12066/mastercard.png"> </a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/checkout/20190816_12066/discover.png"> </a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/checkout/20190816_12066/Diners-Club.png"> </a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/checkout/20190816_12066/american-express.png"> </a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/checkout/20190816_12066/Carte-Bancaire.png"> </a>
+                    <a> <img class="payment_method_boxa2img" src="https://uidesign.zafcdn.com/ZF/image/checkout/20190816_12066/maestro.png"> </a>
+                </div>
+                <div class="payment_method_boxa3">
+                    <form id="input">
+                        <input id="card" type="number" placeholder="Card Number" />
+                        <br>
+                        <br> 
+                        <input id="expiry" type="text" placeholder="Expiration Month/Year"  /> 
+                        <br>
+                        <br>
+                        <input id="cvv" type="text" placeholder="Security Code" />
+                        <br>
+                        <br>
+                        <input id="name" type="text" placeholder="Card Holder" />
+                        <br>
+                        <br>
+                      </form>
+                      <div class="payment_method_boxa3_add">
+                          <h2 class="payment_method_boxa3_add_h2">Billing Address</h2>
+                          <div class="payment_method_boxa3_add1">
+                              <p class="payment_method_boxa3_add1_p1">Testing, Testing, Allison, Iowa, US</p>
+                          </div>
+                          <p class="payment_method_boxa3_add1_p2">We recommend that the billing address you are submitting is the same as <br> your card issuer has on file.</p>
+                      </div>
+                </div>
+                   
+            </div>      
+            <div class="payment_method_boxb">
+                <div class="payment_method_boxb1">
+                    <p>Your Bill:</p>
+                </div>
+                <div class="payment_method_boxb2">
+                    <p>Order Number</p>
+                    <h4>22033000949818531523</h4>
+                    <p>Shipping address </p>
+                    <h4>Testing, Testing, Allison, Iowa, US</h4>
+                </div>
+                <div class="payment_method_boxb3"></div>
+                    <div class="payment_method_boxb3p">
+                        <div><p>Grand Total</p></div>
+                        <div class="payment_method_total"><p>$57.99</p></div>
+                    </div>
+                    <div class="payment_method_boxb3p">
+                        <div><p>Payable Amount</p></div>
+                        <div class="payment_method_payable"><h5>$57.99</h5></div>
+                    </div>
+
+                    <input class="payment_paynow_btn" type="submit" value="PAY NOW"/>
+            </div>
+        </div>
+    </div>
+    <div class="payment_bottom">
+        <img src="https://uidesign.zafcdn.com/ZF/image/5376/20210408_gb_logos.png" alt="">
+        <p>Every order you place with us is completely safe and secure.</p>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector(".payment_paynow_btn").addEventListener("click", payment) ;
+
+    function payment() {
+        event.preventDefault();
+        var card = document.querySelector("#card").value  
+        var expiry = document.querySelector("#expiry").value 
+        var cvv = document.querySelector("#cvv").value 
+        var name = document.querySelector("#name").value 
+        if(name == "Abhishek" && card == 12345678910 && expiry == "01/2026" && cvv == 123)
+        {
+            alert("Payment Sucessfully Done");
+        }
+        else {
+            alert("Error");
+        }
+        
+    }
+</script>
