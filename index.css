@@ -219,6 +219,10 @@
         gap: 25px;
         justify-content: space-between;
     }
+    .bottom_box3 p{
+        text-align: left;
+        margin-left: 0%;
+    }
     a {
         text-decoration: none;
         color: #978e87;
@@ -279,7 +283,7 @@ a{
    }
 #head{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 75%;
     margin: auto;
    
@@ -288,10 +292,8 @@ a{
 #head1{
    display: flex;
    justify-content: end;
-  
-}
-p{
-   margin-left: 30px;
+   gap: 10px;
+   margin-left: 15%;
 }
 select{
    border: none;
