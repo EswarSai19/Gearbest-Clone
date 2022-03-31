@@ -125,7 +125,7 @@ var catdata=[
 
      document.querySelector("#category").append(name)
   })
- document.querySelector("#service").addEventListener("mouseenter")
+//  document.querySelector("#service").addEventListener("mouseenter")
 
-
+ 
 //  top part js end here

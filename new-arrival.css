@@ -6,6 +6,8 @@
     font-size: 28px;
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
+    font-weight: 600;
 }
 .new-arrival-moving-head{
     display: flex;
@@ -48,9 +50,11 @@
 .offfer-discount{
     font-weight: bold;
     color: white;
-    background-color: red;
+    background-color: rgb(235, 43, 43);
     border-radius: 50%;
     text-align: center;
+    height: 55px;
+    width: 55px;
 }
 .card-info-img{
     height: 170px;
@@ -93,7 +97,10 @@
 .centerd-title :first-child{
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-left: 101px;
+    font-family: sans-serif;
 }
 .centerd-title :last-child{
     font-size: 12px;
@@ -107,8 +114,9 @@
     margin-left: 45px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 20px;
+    gap: 46px;
 }
 .navBar>div:hover{
     font-weight: bold;
@@ -122,7 +130,7 @@
     margin-right: 45px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    
     gap: 15px;
 }
 .NewProduct-center>div{
@@ -160,7 +168,19 @@
     width: 70%;
     margin: auto;
 }
-
+.head-NewProduct-center{
+    margin: auto;
+    width: 90%;
+}
+.fa-angle-right:before {
+    content: "\f105";
+    margin-left: -96px;
+}
+.fa-angle-left:before {
+    content: "\f104";
+    position: absolute;
+    padding-left: 65px
+}
 
 /* bottom part css start */
 
@@ -200,10 +220,10 @@
     color: gray;
 }
 .fa-solid {
-    color: gray;
+    color: grey
 }
 .fa-solid:hover{
-    color: rgb(231, 193, 66);
+    color: rgb(236, 233, 24);
     cursor: pointer;
 } 
 .bottom_box1_text:hover{
@@ -278,7 +298,7 @@
     background-color: rgb(44, 138, 201);
 }
 .icon-blo:hover {
-    background-color: rgba(231, 231, 48, 0.884);
+    background-color: rgba(187, 17, 45, 0.884);
 }
 .icon-tu:hover {
     background-color: rgba(185, 175, 175, 0.692);
@@ -496,4 +516,12 @@ select{
   width: 80%;
   margin: auto;
   margin-top: -20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ 
+.ahrefcategory{
+    color: white;
 }

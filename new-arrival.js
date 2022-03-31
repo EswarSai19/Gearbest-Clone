@@ -6,13 +6,13 @@ var  newArrivalSliderArr =[
         productStrickedPrice:"66.99",
     },
     {
-        productName :"Original Globla Newest Xiaomi Redmibook",
+        productName :"Newest Xiaomi Redmibook",
         productUrl:"https://gloimg.gbtcdn.com/soa/gb/item/6900746726869757952/16477/goods_img_big-v1/859c28741c91.jpg",
         productPrice:"1199.99",
         productStrickedPrice:"1538.99",
     },
     {
-        productName :"New Smartwatch 2022 KOSPET TANK M1",
+        productName :"New Smartwatch 2022 KOSPET ",
         productUrl:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_img_big-v5/4a46d20383d6.jpg",
         productPrice:"54.99",
         productStrickedPrice:"68.99",
