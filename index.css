@@ -279,6 +279,7 @@
 a{
     text-decoration: none;
     color: black;
+    
 }
 .ahrefcategory{
     color: white;
@@ -286,16 +287,19 @@ a{
 #head{
     display: flex;
     /* justify-content: space-between; */
-    width: 75%;
+    width: 80%;
     margin: auto;
    
    
 }
+#google_translate_element{
+    margin-top: 14px;
+}
 #head1{
-   display: flex;
-   justify-content: end;
-   gap: 10px;
-   margin-left: 15%;
+    display: flex;
+    justify-content: end;
+    gap: 26px;
+    margin-left: 13%;
 }
 select{
    border: none;
@@ -318,6 +322,8 @@ select{
 
 #sign{
    display: flex;
+   gap: 50px;
+   margin-left: 50px;
 }
 #search{
    border: 1px solid #ffda00;
@@ -378,10 +384,13 @@ margin-top: 30px;
 }
 #black{
   background-color: black;
-  color: white;
+  color:white;
   font-size: 20px;
   text-decoration: none;
  
+}
+#blackcategory{
+    color: white;
 }
 
 #headimag{
