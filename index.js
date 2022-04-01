@@ -80,6 +80,10 @@ products = [
 
 products.map(function(ele){
   var box = document.createElement("div");
+  box.addEventListener("click",function(){
+    window.location.href = "productPage.html"
+  });
+  
   var img = document.createElement("img");
   img.src = ele.img;
   img.setAttribute("class","middleImg")
@@ -95,6 +99,7 @@ products.map(function(ele){
   box.append(discount,img,name,price);
   document.querySelector(".recommeded").append(box);
 })
+
 // middle part js end here 
 
 
