@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        *{  
+            background-color: #f2f2f2;
+            box-sizing: border-box;
+        }
+        .payment_head {
+            width: 100%;
+            height: 93px;
+            margin-top: -5px;
+            padding: 19px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .payment_head > img {
+            margin-left: 10%;
+            height: 52px;
+            width: 230px;
+        }
+        table, 
+        td, th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table {
+            
+            border-collapse: collapse;
+            width: 100%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        th, 
+        td {
+            width: 255px;
+            padding: 15px;
+        }
+        tr > th {
+            background-color: white;
+            color: #13a2b8;
+        }
+        .btn{
+            margin-top: 30px;
+            margin-left: 65rem;
+            display: flex;
+            width: 200px;
+            height: 50px;
+            background-color: #ffda00;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .btn:hover{
+            font-size: 23px;
+            cursor: pointer;
+        }
+        .NoItemInCart{
+            text-align: center;
+            color: #13a2b5;
+        }
+        .deleteMsg:hover {
+            text-decoration: underline black;
+            cursor: pointer;
+        }
+        .totalMsg{
+            margin-right: 420px;
+            text-align: end;
+            color: black;
+        }
+        .totalvalue{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment_head">
+        <img src="https://uidesign.gbtcdn.com/GB/image/other/20190117_7271/Group_45.png" alt="">
+    </div>
+    <div class="cartBody">
+        <div class="btn">Checkout</div>
+        <table>
+            <thead class="tableHead">
+            <tr>
+                <th>Selected Item(s)</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th>Operation</th>
+            </tr>
+            </thead>
+            <tbody id="body">
+            <!-- Append your output to tbody -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    // cartArr = [{
+    //     productName: "Newest Xiaomi Redmibook",
+    //     productUnitPrice: "1199.99",
+    //     prodcutQuntity: "4",   
+    // },
+    // {
+    //     productName: "Newest Xiaomi Redmibook",
+    //     productUnitPrice: "1199.99",
+    //     prodcutQuntity: "4",   
+    // }]
+    // localStorage.setItem("cartArr", JSON.stringify(cartArr))
+    cartArr = JSON.parse(localStorage.getItem("cartArr")) || [];
+    if(cartArr.length <= 0){
+        var msgDiv = document.createElement("div");
+        msgDiv.className = "NoItemInCart";
+        var h2 = document.createElement('h4');
+        h2.innerText =  "There are no items in the shopping cart"; 
+        msgDiv.append(h2);
+        document.querySelector(".cartBody").append(msgDiv)
+    }
+    else{
+        var total = 0; 
+        cartArr.map( function(ele){
+            var tr = document.createElement("tr");
+
+            var td1 = document.createElement("td");
+            td1.innerText = ele.productName;
+
+            var td2 = document.createElement("td");
+            td2.innerText = ele.productUnitPrice;
+
+            var td3 = document.createElement("td");
+            td3.innerText = ele.prodcutQuntity;
+
+            var td4 = document.createElement("td");
+            var subtotal = ele.productUnitPrice * ele.prodcutQuntity;
+            td4.innerText = subtotal;
+            total += subtotal;
+
+            var td5 = document.createElement("td");
+            td5.className = "deleteMsg"
+            td5.innerText = "Delete";
+
+            tr.append(td1, td2, td3, td4, td5)
+            document.querySelector("body").append(tr);
+        });
+
+        var div = document.createElement("div");
+        div.style.marginLeft = "700px"
+        var h2 = document.createElement("h2");
+        var spn = document.createElement("span");
+        spn.className = "totalvalue";
+        spn.innerText = "Rs." + total;
+        h2.append("Total : ", spn)
+        div.append(h2);
+        document.querySelector("body").append(div)
+
+        
+    }
+</script>
+
+
+<!-- 
+cartArr = [{
+    productName:,
+    productUnitPrice:;
+    prodcutQuntity:,   
+}] -->
