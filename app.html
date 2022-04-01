@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script
+
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    
+ 
+</head>
+<body>
+  <!-- <header></header> -->
+  <div id="toph">
+  <img id="headimag" src="https://uidesign.gbtcdn.com/GB/image/9599/%E9%A1%B6%E9%80%9A%E6%9D%A1%E5%B9%85+1920X60+en.jpg" alt="heading" border="0">
+<div id="head">
+    <div id="logo">
+        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" width="230px" height="50px">
+    </div>
+    <div id="head1">
+        <p><span><i class="fa-solid fa-mobile-screen-button"></i></span><span> Save $3 with app</span><span><select name="" id="app"></select></span></p>
+        <p>Support Center</p>
+        <p>Ship to <span><img src="https://uidesign.gbtcdn.com/GB/app/2018/flag_png/us.png" alt="" width="25px" height="15px"> /USD</span><select name=""></select></p>
+        <p>Language<span><select name="" id=""></select></span></p>
+        <p>Country Website<select name="" id=""></select></p>
+    </div>
+
+   
+   
+
+</div>
+<div id="searchbar">
+    <div id="search">
+        <div id="sear"><p>All</p></div>
+        <select name="All" id=""></select>
+        <input id="inp" type="text">
+        <div id="icon"><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+    
+    </div>
+<div id="sign">
+    <p><span></span>Sign in</p>
+    <p><span><i class="fa-regular fa-heart"></i></i></span> Favourites</p>
+    <p><span><i class="fa-solid fa-cart-arrow-down"></i></span> Cart</p>
+</div>
+
+</div>  
+
+<div id="cat">
+    <div id="black"><h4>Category</h4></div>
+    <div><h4>SUPER DEALS</h4></div>
+    <div><h4>APP ONLY</h4></div>
+    <div><h4>NEW ARRIVALS</h4></div>
+</div>
+</div>
+
+
+
+
+
+
+   <!-- top div in app only -->
+
+   <div id="top">
+     <div>ALL</div>
+     <div>Men's Fashion</div>
+     <div>Cell Phones & Accessories</div>
+     <div> Computers, Tablets & Office</div>
+     <div>Consumer Electronics</div>
+     <div> Drones, Toys & Hobbies</div>
+     <div>Home Improvement & Tools</div>
+     <div> Women's Fashion</div>
+     <div>Home & Garden</div>
+     <div> Industrial & Scientific</div>
+     <div>Motor & Car Electronics</div>
+     <div>Watches & Jewelry</div>
+     <div> Appliances</div>
+     <div> Health & Personal Care</div>
+     <div> Outdoors, Fitness & Sports</div>
+     <div></div>
+   </div>
+
+        <!-- <h1>APP ONLY</h1> -->
+        <p id="short">Sort By : <span>
+            <!-- <select  id="sd"> -->
+                <option id="sd" >Discount</option>
+               
+            <!-- </select> -->
+            <!-- <select  id="sd"> -->
+               
+            <!-- </select> -->
+        </span>  <span><option  id="sp" onchange="hadndleDiscountSort()" value="ascending" >Price</option></span> </p>
+
+    <!-- appData -->
+            <div id="container">
+             
+            </div>
+
+            <!-- bottom part -->
+            <div class="bottom_box1">
+              <div class="bottom_box1_logo">
+                  <div>
+                      <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png" alt="GearBest"/>
+                      <h3 class="footerLogo_text">AFFORDABLE QUALITY<br/> FUN SHOPPING</h3> 
+                  </div>
+          
+              </div>
+              <div class="bottom_box1_1">
+                  <div class="bottom_box1_icon"> <i class="fa-solid fa-store"></i>  </div>
+                  <div class="bottom_box1_text">
+                      <h1>High Quality Selection</h1>
+                  </div>
+                  <div class="bottom_box1_text1">
+                      <p>Total product quality <br> control for peace of mind</p>
+                  </div>
+              </div>
+              <div class="bottom_box1_1">
+                  <div class="bottom_box1_icon"> <i class="fa-solid fa-hand-holding-dollar"></i> </div>
+                  <div class="bottom_box1_text">
+                      <h1>Affordable Prices</h1>
+                  </div>
+                  <div class="bottom_box1_text1">
+                      <p>Factory direct prices for <br> maximum savings</p>
+                  </div>
+              </div>
+              <div class="bottom_box1_1">
+                  <div class="bottom_box1_icon"> <i class="fa-solid fa-truck-fast"></i>  </div>
+                  <div class="bottom_box1_text">
+                      <h1>Express Shipping</h1>
+                  </div>
+                  <div class="bottom_box1_text1">
+                      <p>Fast, reliable delivery from <br> global warehouses</p>
+                  </div>
+              </div>
+              <div class="bottom_box1_1">
+                  <div class="bottom_box1_icon"> <i class="fa-solid fa-star"></i>  </div>
+                  <div class="bottom_box1_text">
+                      <h1>Worry-free After-sales</h1>
+                  </div>
+                  <div class="bottom_box1_text1">
+                      <p>Instant access to <br> professional support</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="bottom_box2">
+              <div class="bottom_box2_subs">
+                  <span class="bottom_box2_text">Newsletter</span> 
+                  <span><input type="email" class="bottom_box2_email"placeholder="Enter Email to get 50 Points"/> </span> 
+                  <button type="submit" class="bottom_box2_btn"> Subscribe </button> 
+              </div>
+              <div class="bottom_box2_Soical_id">
+                      <div class="icon-fb"><a  href="https://www.facebook.com/Gearbestshopping">  <i class="fa-brands fa-facebook-f"></i> </a> </div>
+                      <div class="icon-mess"><a  href="https://goo.gl/qXtLAh"> <i class="fa-brands fa-facebook-messenger"></i> </a></div> 
+                      <div class="icon-y"><a  href="https://www.youtube.com/user/TheGearBest"> <i class="fa-brands fa-youtube"></i> </a></div> 
+                      <div class="icon-p"><a  href="https://www.pinterest.com/gearbestlife/"> <i class="fa-brands fa-pinterest"></i> </a></div> 
+                      <div class="icon-vk"><a  href="https://vk.com/gearbest"> <i class="fa-brands fa-vk"></i> </a></div> 
+                      <div class="icon-insta"><a  href="https://www.instagram.com/gearbest/"> <i class="fa-brands fa-instagram"></i> </a></div> 
+                      <div class="icon-twi"><a  href="https://twitter.com/TheGearbest/"> <i class="fa-brands fa-twitter"></i> </a></div> 
+                      <div class="icon-blo"><a  href="https://www.gearbest.com/blog/"> <i class="fa-brands fa-blogger"></i> </a></div> 
+                      <div class="icon-tu"><a  href="http://bit.ly/2LadoyE"> <i class="fa-brands fa-tumblr"></i> </a></div> 
+              </div>
+          </div>
+          <div class="bottom_box3">
+              <div class="bottom_box3_1">
+                  <h4>Company Information</h4> 
+                  <p> <a  href="https://www.gearbest.com/about/about-us.html"> About Us </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/top-searches/"> Top Searches </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/privacy-policy.html"> Privacy Policy </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/terms-and-conditions.html"> Terms and Conditions </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/Intellectual-Property-Policy.html"> Intellectual Property Policy </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/testimonials.html"> Testimonials </a> </p>
+                  <p> <a  href="https://www.gearbest.com/about/contactus.html"> Contact Us </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/report-security-issue.html"> Report Security Issu </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/suppliers"> Sell on Gearbest</a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/cookie-policy.html"> Cookies Policy </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/top-brands.html"> Top Brand </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/blog/"> Gearbest Official Blog </a> </p> 
+              </div>
+              <div class="bottom_box3_1">
+                  <h4>Customer Service</h4> 
+                  <p> <a  href="https://www.gearbest.com/about/shipping-methods.html"> Shipping Information </a> </p> 
+                  <p> <a  href="https://user.gearbest.com/index#/favor/goods"> My Favorites </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/faq-for-newsletter-subscription.html"> FAQ For Newsletter Subscription </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/about-points.html"> My Points </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/warranty-and-return.html"> Warranty and Return </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/payment-methods.html"> Payment Methods </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/deposit.html"> Deposit Expansion </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/faq.html"> FAQ &amp; Support </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/sitemap.html"> Sitemap </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/gb-wallet.html"> Gearbest Wallet Instruction </a> </p> 
+                  <p> <a  href="https://www.gearbest.com/about/faqs-about-covid-19.html"> FAQs about COVID-19 </a> </p> 
+              </div>
+              <div class="bottom_box3_1">
+                  <h4>Other Business</h4> 
+                  <p> <a  href="https://www.gearbest.com/about/make-money.html"> Partnership Programs </a> </p> 
+                  <p> <a  href="https://affiliate.gearbest.com/"> Associate Program </a> </p> 
+              </div>
+              <div>
+                  <div class="bottom_box3_1">
+                      <div class="bottom_box3_1a">
+                          <h4>Download App! </h4> 
+                          <p>Save $3 with App & New User Only</p> 
+                      </div> 
+                      
+                     <div class="bottom_box3_2">
+                         <div>
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxY7UlAzg46TshUmYfmtIHGMNWcUbKZRk4WOfBfjVNqZZgCpB" alt="">
+                         </div>
+                         <div class="bottom_box3_2a">
+                             <img class="bottom_box3_2img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRydcgqVJDE-R141giWLw0mVnIW8x7-ZJy2_UIUe4UmtmMh4QX6" alt=""> 
+                             <img class="bottom_box3_2img" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWOrVNSgVtjivIC-fXrjwVexAML-wYdoZC7TfrSUT7GNgtm5rz" alt="">
+                         </div>
+                     </div>
+                  </div> 
+              </div> 
+          </div>
+          <div class="bottom_box4">
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/money.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/m.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/rese.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/paypal.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/visa.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/a.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ww.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/jcb.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/dic.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ya.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/d.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/qiwi.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/oxxo.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/webmoney.png"> </a> <br>
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/bo.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/postepay.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/giropay.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/sofort.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/eps.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/p.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/pago.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png"> </a> 
+              <a> <img class="bottom_box4_img" src="https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png"> </a> 
+          </div>
+          <footer><p class="footer_text"> Copyright © 2014-2021 Gearbest.com. All Rights Reserved. </p> </footer>
+                
+           
+        
+    
+</body>
+</html>
+<script>
+    var appData = [
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16418/goods_thumb_220-v1/f6ef4460fb61.jpg" ,
+
+name : "BOOSTER M2 24V 12V LCD Display Massage Gun..." ,
+// logo1 : "<i class='fa-light fa-mobile-notch log'></i>" ,
+price1 : "$89.99" ,
+price2  : "$110.49" ,
+name2 : "Flash Sale" ,
+discount : "15%" ,
+logo2  : "<i class='fa-regular fa-heart'></i>",
+qr : "<i class='fa-light fa-qrcode'></i> ",
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16394/goods_thumb_220-v1/43729d7a38c7.jpg" ,
+name : "Fashion Men Luxury Stainless Steel Watch Calendar Date..." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$5.20" ,
+price2  : "$5.69" ,
+name2 : "Flash Sale" ,
+discount : "65%" ,
+// logo2 : "<i class='fa-light fa-heart'></i>",
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16468/goods_thumb_220-v1/7c20571506f3.jpg" ,
+name : "E525 PRO RC Drone with Obstacle Avoidance 4k WIFI...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$55.00" ,
+price2  : "$55.50" ,
+name2 : "Flash Sale" ,
+discount : "39%",
+// // logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16406/goods_thumb_220-v1/0e0c44061ef4.jpg" ,
+name : "CREALITY 3D Ender-3 Pro Printer Printing Masks Magnetic...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$237.31" ,
+price2  : "$ 247.20" ,
+name2 : "Flash Sale" ,
+discount : "55%"
+// // logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6900399760277172224/16467/goods_thumb_220-v2/736270310c6f.jpg" ,
+name : "RUNFENGTE New 1.78 inch Full Touch Screen Bluetooth Calling...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$42.23" ,
+price2  : "$43.19" ,
+name2 : "Flash Sale" ,
+discount : "24%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16460/goods_thumb_220-v1/87160190c18a.jpg" ,
+name : "Xiaomi Mijia Portable Electric Lint Remover Clothes Hair Ball...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$14.88" ,
+price2  : "$14.99" ,
+name2 : "Flash Sale" ,
+discount : "40%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/store/6771730315905003520/16419/goods_thumb_220-v1/a2fbd39cb9c5.jpg" ,
+name : "2.4Ghz 6 Channel 124 RC Excavator toy RC Engineering...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$$31.39" ,
+price2  : "$$31.81" ,
+name2 : "Flash Sale" ,
+discount : "15%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16461/goods_thumb_220-v1/c2378bd549e0.jpg" ,
+name : "Joerid Juicer Machine Juice Extractor Centrifugal Juicers...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$41.99" ,
+price2  : "$$42.99" ,
+name2 : "Flash Sale" ,
+discount : "20%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16420/goods_thumb_220-v3/03769db43d68.jpg" ,
+name : "Z45 Led Flashlight Ultra Bright Waterproof Torch T6/L2/V6...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$3.31" ,
+price2  : "$3.61" ,
+name2 : "Flash Sale" ,
+discount : "40%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/store/6771730315905003520/16457/goods_thumb_220-v1/28ae6bb20bc1.jpg" ,
+name : "...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $39.73" ,
+price2  : "$40.23" ,
+name2 : "Flash Sale" ,
+discount : "20%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16395/goods_thumb_220-v1/ba0b324b4b5b.jpg" ,
+name : "10000Lm H4 LED Moto H6 BA20D LED Motorcycle...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$23.69" ,
+price2  : "$23.99" ,
+name2 : "Flash Sale" ,
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/store/6866331803104505856/16424/goods_thumb_220-v5/0348c53d8607.jpg" ,
+name : "Summer Short Sleeved Casual Loose Tshirt New Oversize Men...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$6.00" ,
+price2  : "$6.59" ,
+name2 : "Flash Sale" ,
+discount : "25%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16421/goods_thumb_220-v4/a0da751fd8f8.jpg" ,
+name : "Original Xiaomi Redmi Airdots 2 TWS Fone Bluetooth Earphones...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$8.39" ,
+price2  : "$8.99" ,
+name2 : "Flash Sale" ,
+discount : "25%"
+// // logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6900399760277172224/16469/goods_thumb_220-v4/8c630877f8f2.jpg" ,
+name : "TWS 5.0 Earphones Wireless Bluetooth Earphone IPX5...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$12.74" ,
+price2  : "$12.99" ,
+name2 : "Flash Sale" ,
+discount : "25%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16433/goods_thumb_220-v1/0b0ff330204b.jpg" ,
+name : "BMAX MaxPad I11 UNISOC T618 Octa Core 8GB RAM...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$174.00" ,
+price2  : "$175.00" ,
+name2 : "Flash Sale" ,
+discount : "45%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16421/goods_thumb_220-v3/9077ff9db427.jpg" ,
+name : "Xiaomi Mijia Mini Inflatable Treasure 1S Portable Smart...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$41.88" ,
+price2  : "$41.99" ,
+name2 : "Flash Sale" ,
+discount : "23%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16416/goods_thumb_220-v1/9dbf47dbe530.jpg" ,
+name : "A9 Mini Camera WiFi Camera 1080P HD Night Version Voice...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$21.80" ,
+price2  : "$21.90" ,
+name2 : "Flash Sale" ,
+discount : "23%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16472/goods_thumb_220-v3/8c2b6de7e3b0.jpg" ,
+name : "Celutares Smartphone X3 Pro 5G 5.8inch Android12 5600mAh...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $67.50" ,
+price2  : "$68.00" ,
+name2 : "Flash Sale" ,
+discount : "19%"
+// // logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6866331803104505856/16396/goods_thumb_220-v3/e62f99b47710.jpg" ,
+name : "Global Version POCO X3 Pro NFC 6GB 128GB/ 8GB 256GB...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $214.27" ,
+price2  : "$234.36" ,
+name2 : "Flash Sale" ,
+discount : "19%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16417/goods_thumb_220-v1/0b74ebf9ee1a.jpg" ,
+name : "T88 Smart Watch Body Temperature Monitoring Blood...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $29.80" ,
+price2  : "$29.88" ,
+name2 : "Flash Sale" ,
+discount : "19%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16422/goods_thumb_220-v2/9711de1c7742.jpg" ,
+name : "Replacement Toothbrush Head Accessories for SOOCARE...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $6.98" ,
+price2  : "$6.99" ,
+name2 : "Flash Sale" ,
+discount : "19%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16456/goods_thumb_220-v2/5bf23f171495.jpg" ,
+name : "Xiaomi Wireless Over Ear Headphone Wireless Bluetooth...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $33.90 " ,
+price2  : "$33.99" ,
+name2 : "Flash Sale" ,
+discount : "29%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16458/goods_thumb_220-v1/5ff3325fa799.jpg" ,
+name : "Xiaomi DUKA RS1 24 in1 / RS2 33 in 1 Multi-purpose Ratchet...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$15.88 " ,
+price2  : "$15.99" ,
+name2 : "Flash Sale" ,
+discount : "29%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16469/goods_thumb_220-v2/95132c59a1e2.jpg" ,
+name : "Camaroca 56 HOURS LONG Battery Wireless Bluetooth V5.1...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "  $19.95" ,
+price2  : "$19.99" ,
+name2 : "Flash Sale" ,
+discount : "17%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/store/6615272824267153408/16475/goods_thumb_220-v3/ea8046d3832b.jpg" ,
+name : "Global ROM OnePlus 9 128GB 256GB Snapdragon 888 5G...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "  $469.10 " ,
+price2  : "$474.56" ,
+name2 : "Flash Sale" ,
+discount : "17%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16429/goods_thumb_220-v1/ffc74198dee4.jpg" ,
+name : "...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $73.88 " ,
+price2  : "$73.99" ,
+name2 : "Flash Sale" ,
+discount : "22%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16417/goods_thumb_220-v1/210d26d8cc47.jpg" ,
+name : "POPLOV Women Watches Fashion Ladies Watch Women...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "  $9.74 " ,
+price2  : "$9.95" ,
+name2 : "Flash Sale" ,
+discount : "67%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16454/goods_thumb_220-v1/42405dc55cb8.jpg" ,
+name : "OUKITEL WP15 5G Global Bands 15600mAh Battery...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "$285.00  " ,
+price2  : "$289.00" ,
+name2 : "Flash Sale" ,
+discount : "55%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16424/goods_thumb_220-v1/186cd6966d5f.jpg" ,
+name : "Xiaomi Mi Intelligent Remote Control Car SUZUKI JIMNY 4...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : " $51.88 " ,
+price2  : "$51.99" ,
+name2 : "Flash Sale" ,
+discount : "15%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+{image_url : "https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_thumb_220-v1/c756d2c80fe9.jpg" ,
+name : "Xiaomi Redmi Airdots S Earphone Tws Wireless inear...." ,
+// logo1 : <i class="fa-light fa-mobile-notch"></i> ,
+price1 : "  $9.69 " ,
+price2  : "$9.99" ,
+name2 : "Flash Sale" ,
+discount : "50%"
+// logo2 : <i class="fa-light fa-heart"></i>,
+// qr : <i class="fa-light fa-qrcode"></i> ,
+} ,
+
+ 
+    ] ;
+    appData.map(function (elem) {
+        console.log(elem)
+    var box = document.createElement("div");
+
+    var imge = document.createElement("img");
+    imge.src = elem.image_url;
+    imge.setAttribute("class", "i");
+
+    var discount = document.createElement("div");
+  discount.innerText = elem.discount ;
+  discount.setAttribute("class","gbItem_discount");
+
+    var name = document.createElement("p");
+    name.innerText = elem.name;
+    name.setAttribute("class", "n");
+
+    var logo1 = document.createElement("img")
+    logo1.src = elem.logo1
+
+   var price1 = document.createElement("h5");
+   price1.innerText = elem.price1;
+  price1.setAttribute("class", "p1");
+
+    var price2 = document.createElement("p");
+    price2.innerText = elem.price2;
+    price2.setAttribute("class", "p2");
+
+    var name2 = document.createElement("p")
+   name2.innerText= elem.name2
+   name2.setAttribute("class", "name2");
+
+  
+   
+var div = document.createElement("div")
+div.setAttribute("id" ,"heart")
+    var logo2 = document.createElement("i")
+    logo2.className= "fa-regular fa-heart";
+  //  logo2.setAttribute("class", "logo2");
+   div.append(logo2)
+
+ 
+    
+    
+  
+    box.append(discount,imge,name,price1,price2 ,name2,div);
+
+    document.querySelector("#container").append(box);
+  });
+  function  hadndleDiscountSort(){
+      console.log("insidename ")
+      var selected = document.querySelector("#sp").value
+      console.log(selected)
+      if(selected=="ascending"){
+        appData.sort(function(a,b){
+            return a.price1-b.price1
+        }) ;
+        // console.log(appData)
+      }
+  }
+</script>
