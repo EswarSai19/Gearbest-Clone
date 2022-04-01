@@ -1,3 +1,6 @@
+body{
+    margin: auto;
+}
 .new-arrival{
     width: 100%; 
     padding-bottom: 20px;
@@ -441,7 +444,8 @@ margin-top: 30px;
    display: flex;
   width: 80%;
   margin: auto;
- background-color: #ffda00;
+ background-color: white;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
    
 }
@@ -460,8 +464,8 @@ margin-top: 30px;
 
 }
 #black{
-  background-color: black;
-  color: white;
+  background-color:bwhite;
+  color:white;
   font-size: 20px;
   text-decoration: none;
  
@@ -522,6 +526,3 @@ a{
     color: black;
 }
  
-.ahrefcategory{
-    color: white;
-}
