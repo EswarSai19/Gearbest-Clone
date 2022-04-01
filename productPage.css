@@ -348,6 +348,9 @@ body{
 .qty>p:nth-child(1){
     color: #7e94b2;
 }
+.adding,.substract:hover{
+    cursor: pointer;
+}
 
 .nums{
     display: flex;
@@ -418,6 +421,9 @@ button:hover{
 }
 .taxes{
     display: flex;
+}
+.taxes p{
+    margin-left: 20px;
 }
 /* box 1 completed */
 
@@ -609,6 +615,60 @@ button:hover{
 }
 /* box3 completed */
 
+.main_container{
+    height: 300px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.spimage{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+}
+.spbox{
+    width: 15%;
+    height: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.spimgbox{
+    width: 100%;
+    height: 70%;
+}
+.spprice{
+    color: #f30240;
+    font-size: 25px;
+    text-align: left;
+    margin-top: -10px;
+}
+.left_arr{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+.right_arr{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+.main_container i{
+    font-size: 50px;
+}
+
+.spbox:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
 
 .inneritems>img{
     width: 100%;
@@ -616,6 +676,61 @@ button:hover{
 }
 
 /* box4 completed */
+.main_container1{
+    height: 300px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.spimage1{
+    width: 100%;
+    height: 100%;
+}
+.container1{
+    width: 100%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+}
+.spbox1{
+    width: 15%;
+    height: 95%;
+    margin: auto;
+    padding: 10px;
+}
+.spimgbox1{
+    width: 100%;
+    height: 70%;
+}
+.spprice1{
+    color: #f30240;
+    font-size: 25px;
+    text-align: left;
+    margin-top: -10px;
+}
+.left_arr1{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+.right_arr1{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+.main_container1 i{
+    font-size: 50px;
+}
+
+.spbox1:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
 .fea1{
     width: 85%;
     height: 180px;
