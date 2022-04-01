@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorites</title>
+    <style>
+        *{  
+            background-color: #f2f2f2;
+            box-sizing: border-box;
+        }
+        .payment_head {
+            width: 100%;
+            height: 93px;
+            margin-top: -5px;
+            padding: 19px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .payment_head > img {
+            margin-left: 10%;
+            height: 52px;
+            width: 230px;
+        }
+        .FavBody{
+            width: 100%;
+            display: flex;
+        }
+        .profile{
+            margin: 20px;
+            width: 30%;
+            height: 400px;
+
+            background-color: #ffffff;
+        }
+        .favList{
+            margin: 20px;
+            width: 70%;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .favList h2{
+            text-decoration: underline;
+            background-color: #ffffff;
+            /* padding-left: 20px; */
+        }
+        .profileImg{
+            width: 96px;
+            height: 96px;
+            margin-top: 50px;
+            margin-left: 130px;
+            border-radius: 50%;
+        }
+        .ProfileName{
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .edit{
+            margin-left: 120px;
+            width: 120px;
+            margin-bottom: 10px;
+            height: 25px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            color: #13a2b5;
+            text-align: center;
+            font-size: 15px;
+
+        }
+        .query{
+            margin-left: 120px;
+            width: 120px;
+            height: 25px;
+            background-color: #008fff;
+            border: 1px solid black;
+            color: #ffffff;
+            text-align: center;
+            font-size: 15px;
+        }
+        .favItemsCards{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 300px);
+            gap: 30px;
+            background-color: #ffffff;
+            /* border: 1px solid black ; */
+        }
+        .cardDiv{
+            background-color: #ffffff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 5px;
+        }
+        .cardDiv:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .favProduct-img{
+            /* set img size */
+            width: 180px; 
+            height: 150px;
+            object-fit: contain;
+            background-color: #ffffff;
+            
+        }
+        .favProduct-Name{
+            /* set product name */
+            background-color: #ffffff;
+        }
+        .fevProduct-price{
+            /* set price */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment_head">
+        <img src="https://uidesign.gbtcdn.com/GB/image/other/20190117_7271/Group_45.png" alt="">
+    </div>
+
+    <div class="FavBody">
+        <div class="profile"">
+            <img class="profileImg" src="https://lh3.googleusercontent.com/a-/AOh14GjAOySd7MbNtpEjguY7Ykz1Bn33H_vzrKhBDiV3zQ=s96-c" alt="">
+            <h3 class="ProfileName">Parvat Raj Singh</h3>
+            <button class="edit">Edit Profile</button>
+            <br>
+            <button class="query">Message Us</button>
+        </div>
+        <div class="favList">
+            <h2>Goods</h2>
+            <div class="favItemsCards">
+                <!-- append cars here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    // var favArr = [
+    //     {
+    //         productImageUrl : "https://gloimg.gbtcdn.com/soa/gb/item/6878030535709618176/16485/goods_thumb_220-v1/69ca618dbb90.jpg" ,
+    //         productName : "Q2 Portable Mini Projector Home Theater System",
+    //         prodctPrice : "68.99"
+    //     },
+    //     {
+    //         productImageUrl : "https://gloimg.gbtcdn.com/soa/gb/item/6900386065325158400/16485/goods_thumb_220-v1/6775256dea82.jpg",
+    //         productName : "HUINA 1572 2.4GHz 15CH RC Crawler Crane Vehicle Toy",
+    //         prodctPrice : "81.99",
+    //     }
+    // ];
+
+    // localStorage.setItem("favArr", JSON.stringify(favArr));
+
+    var favArr = JSON.parse(localStorage.getItem("favArr")) || []
+    window.addEventListener("load", function(){
+    displayProduct(favArr)
+    })
+    function displayProduct(arr){
+        arr.map(function (ele){
+            var div = document.createElement("div")
+            div.className = "cardDiv";
+            var imgDiv = document.createElement("img");
+            imgDiv.className = "favProduct-img"
+            imgDiv.setAttribute("src", ele.productImageUrl);
+            
+
+            var pdiv = document.createElement("p");
+            pdiv.className = "favProduct-Name"
+            pdiv.innerText = ele.productName;
+
+            var priceDiv = document.createElement("h2");
+            priceDiv.className = "fevProduct-price";
+            priceDiv.innerText = "$ " + ele.prodctPrice;
+            div.append(imgDiv, pdiv, priceDiv);
+            document.querySelector(".favItemsCards").append(div)
+        });
+    }
+</script>
+
+<!-- favArr = [{
+    productName :"New Smartwatch 2022 KOSPET ",
+    productUrl:"https://gloimg.gbtcdn.com/soa/gb/item/6901962188706213888/16473/goods_img_big-v5/4a46d20383d6.jpg",
+    productPrice:"54.99"
+}] -->
