@@ -1,0 +1,705 @@
+/* css for header */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;500&family=Ubuntu:wght@500&display=swap');
+       #toph{margin: auto; 
+        width: 100%;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+       }
+body {
+            background-color: #fafafa;
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        #Main_container{
+           margin: auto; 
+           width: 80%;
+        }
+        .collection,.superdeals{
+            /* width: 95%; */
+           /* height: 250px;  */
+           
+           display: grid;
+           margin: auto;
+           grid-template-columns: repeat(5,1fr);
+           gap: 10px;
+       }
+       .recommeded{
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(5,1fr);
+        gap: 10px;
+       }
+       .recommeded>div{
+        padding: 10px;
+       }
+       .recommeded>div:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+       }
+       .collection>div{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          text-align: center;
+       }
+       .superdeals>div{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          padding: 10px;
+       }
+       .new>div{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          
+       }
+       
+       .middleImg{
+           height: 200px;
+           width: 200px;
+       }
+       /* .collection,.superdeals,.new p{
+           text-align: center;
+          
+       } */
+       .heading{
+        font-family: Poppins;
+        width: 100%;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        margin-top: 50px;
+       }
+      p{
+        font-family: sans-serif;
+      }
+       .price{
+           color: red;
+           font-size: 20px;
+           margin-left: 0px;
+       }
+       .strikeprice{
+           text-decoration: line-through;
+           margin-left: 0px;
+       }
+       /* .collection>div>p:hover{
+           background-color: rgb(218, 27, 27);
+
+       } */
+       .gbItem_discount {
+        margin-left: 160px;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: #e71c1c;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+    }
+    /* middle part css end here */
+
+/* bottom part css start */
+
+
+
+    .bottom_box1{
+        height: auto;
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        background-color: white;
+        justify-content:space-around;
+        align-items: center;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .bottom_box1_logo  div img {
+        height: 43px;
+        width: 200px;
+    }
+    .bottom_box1_logo div h3 {
+       font-size: 14px;
+       text-align: center;
+       margin-top: 4px;
+    }
+    .bottom_box1_1 {
+        text-align: center;
+    }
+    .bottom_box1_1 > .bottom_box1_text{
+        font-size: 8px;
+        margin-top: -8px;
+    }
+    .bottom_box1_1 > .bottom_box1_text1{
+        font-size: 14px;
+        margin-top: -10px;
+        color: gray;
+    }
+    .fa-solid {
+        color: gray;
+    }
+    .fa-solid:hover{
+        color: rgb(231, 193, 66);
+        cursor: pointer;
+    } 
+    .bottom_box1_text:hover{
+        color: rgb(231, 193, 66);
+        cursor: pointer;
+    } 
+    
+    .bottom_box2 {
+        height: 60px;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom_box2_text {
+        font-size: 16px;
+        font-weight: bold;
+        color: gray;
+    }
+    .bottom_box2_email {
+        height: 40px;
+        width: 300px;
+    }
+    .bottom_box2_btn {
+        height: 42px;
+        width: 121px;
+        background-color: black;
+        color: white;
+        
+        border: none;
+    }
+    .bottom_box2_btn:hover{
+        background-color: gray;
+        cursor: pointer;
+    }
+    .bottom_box2_Soical_id  {
+        display: flex;
+        gap: 16px;
+        text-align: center;
+    }
+    .bottom_box2_Soical_id >div {
+        border-radius: 50px;
+        height: 20px;
+        width: 20px;
+        padding: 4px;
+        background-color: #464646;
+        
+    }
+    .fa-brands {
+        color: white;
+    }
+    .icon-fb:hover {
+        background-color: rgb(94, 85, 219);
+    }
+    .icon-mess:hover {
+        background-color: rgb(44, 138, 201);
+    }
+    .icon-y:hover {
+        background-color: red;
+    }
+    .icon-p:hover {
+        background-color: rgb(211, 32, 47);
+    }
+    .icon-vk:hover {
+        background-color: rgba(30, 60, 124, 0.863);
+    }
+    .icon-insta:hover {
+        background-color: rgb(44, 138, 201);
+    }
+    .icon-twi:hover {
+        background-color: rgb(44, 138, 201);
+    }
+    .icon-blo:hover {
+        background-color: rgba(231, 231, 48, 0.884);
+    }
+    .icon-tu:hover {
+        background-color: rgba(185, 175, 175, 0.692);
+    }
+    .bottom_box3 {
+        margin-top: 30px;
+        height: 300px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        line-height: px;
+        gap: 25px;
+        justify-content: space-between;
+    }
+    a {
+        text-decoration: none;
+        color: #978e87;
+    }
+    .bottom_box3_1 {
+        line-height: 5px;
+        font-size: 14px;
+    }
+    .bottom_box3_1a p{
+        font-size: 14px;
+        font-style: italic;
+    }
+    .bottom_box3_2 {
+        display: flex; 
+        gap: 10px;
+    }
+    .bottom_box3_2img {
+        height: 50px;
+        width: 180px;
+    }
+    .bottom_box3_2a {
+        display: grid;
+    }
+    .bottom_box4 {
+        height: 90px;
+        margin-top: 19px;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .bottom_box4_img {
+        height: 35px;
+        width: 70px;
+        
+    }
+    .footer_text{
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        height: 28px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+   
+/* bottom page css end here */
+
+
+/* top part css start here */
+
+
+    
+#head{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+   
+   
+}
+#head1{
+   display: flex;
+   justify-content: end;
+  
+}
+p{
+   margin-left: 30px;
+}
+select{
+   border: none;
+   outline: none;
+}
+#search{
+   display: flex;
+}
+#inp{
+   width: 350px;
+   height: 30px;
+   border: none;
+   outline: none;
+}
+#searchbar{
+   display: flex;
+   margin-left: 570px;
+   margin-top: -25px;
+}
+
+#sign{
+   display: flex;
+}
+#search{
+   border: 1px solid #ffda00;
+   height: 35px;
+   border-radius: 50px;
+
+}
+#sear{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffda00;
+   width: 40px;
+   border-top-right-radius: 50%;
+     border-bottom-right-radius: 50%;   
+}
+#head1>p{
+   color: #837e79;
+
+}
+#head1>p:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+#sign>p{
+   color: #837e79;
+   font-size: 16px;
+}
+#logo{
+margin-top: 30px;
+}
+#cat{
+    display: flex;
+   width: 80%;
+   margin: auto;
+  background-color: #ffda00;
+ 
+    
+ }
+ 
+ #cat>div{
+   display: flex;
+   width: 250px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+ }
+ #cat h4:hover{
+   text-decoration: underline 5px;
+   cursor: pointer;
+ 
+ 
+ }
+/* css for appData */
+#container {
+
+    width: 80%;
+ 
+   margin: auto;
+   margin-top: 60px;
+  
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #F2F2F2;
+    }
+    #container>div{
+        
+      margin-left: 20px;
+      background-color: #FFFFFF;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     
+    }
+    .i{
+    margin:10px 27px 0px 27px;
+    }
+    .n{
+        margin:0px 27px ;
+        color: #000000;
+    }
+    .p1{
+      margin:0px 27px ;
+    color: #F30246;
+    margin-top:15px ;
+    font-size: 20px;
+    }
+     
+    .p2{
+      margin:0px 27px ;
+    color: #999999;
+   
+   
+    }
+    .name2{
+      margin:0px 27px ;
+      color: #F30246;
+      
+
+   
+    }
+    .i{
+      color: red;
+      background-color: blue ;
+    }
+     /* css for top */
+     #top{
+      height: 200px;
+      width: 80%;
+      
+     
+       border: 1px solid yellow;
+    
+       
+       background-color: white;
+       margin: auto;
+       margin-top: 30px;
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       grid-template-rows: repeat(3,50px);
+     }
+     #top>div{
+        margin-left: 20px;
+        margin-top:20px ;
+        font-size: 22px;
+        color: #999999;
+     }
+     #top>div:hover{
+         color: black;
+         cursor: pointer;
+         font-weight: bold;
+     }
+     #top>div:nth-child(1){
+        text-decoration: underline;
+       
+     }
+     /* bottom css */
+     .bottom_box1{
+        height: auto;
+        width: 90%;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        background-color: white;
+        justify-content:space-around;
+        align-items: center;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .bottom_box1_logo  div img {
+        height: 43px;
+        width: 200px;
+    }
+    .bottom_box1_logo div h3 {
+       font-size: 14px;
+       text-align: center;
+       margin-top: 4px;
+    }
+    .bottom_box1_1 {
+        text-align: center;
+    }
+    .bottom_box1_1 > .bottom_box1_text{
+        font-size: 8px;
+        margin-top: -8px;
+    }
+    .bottom_box1_1 > .bottom_box1_text1{
+        font-size: 14px;
+        margin-top: -10px;
+        color: gray;
+    }
+    .fa-solid {
+        color: gray;
+    }
+    .fa-solid:hover{
+        color: rgb(231, 193, 66);
+        cursor: pointer;
+    } 
+    .bottom_box1_text:hover{
+        color: rgb(231, 193, 66);
+        cursor: pointer;
+    } 
+    
+    .bottom_box2 {
+        height: 60px;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom_box2_text {
+        font-size: 16px;
+        font-weight: bold;
+        color: gray;
+    }
+    .bottom_box2_email {
+        height: 40px;
+        width: 300px;
+    }
+    .bottom_box2_btn {
+        height: 42px;
+        width: 121px;
+        background-color: black;
+        color: white;
+        
+        border: none;
+    }
+    .bottom_box2_btn:hover{
+        background-color: gray;
+        cursor: pointer;
+    }
+    .bottom_box2_Soical_id  {
+        display: flex;
+        gap: 16px;
+        text-align: center;
+    }
+    .bottom_box2_Soical_id >div {
+        border-radius: 50px;
+        height: 20px;
+        width: 20px;
+        padding: 4px;
+        background-color: #464646;
+        
+    }
+    .fa-brands {
+        color: white;
+    }
+    .icon-fb:hover {
+        background-color: rgb(94, 85, 219);
+    }
+    .icon-mess:hover {
+        background-color: rgb(44, 138, 201);
+    }
+    .icon-y:hover {
+        background-color: red;
+    }
+    .icon-p:hover {
+        background-color: rgb(211, 32, 47);
+    }
+    .icon-vk:hover {
+        background-color: rgba(30, 60, 124, 0.863);
+    }
+    .icon-insta:hover {
+        background-color: rgb(44, 138, 201);
+    }
+    .icon-twi:hover {
+        background-color: rgb(44, 138, 201);
+    }
+    .icon-blo:hover {
+        background-color: rgba(231, 231, 48, 0.884);
+    }
+    .icon-tu:hover {
+        background-color: rgba(185, 175, 175, 0.692);
+    }
+    .bottom_box3 {
+        margin-top: 30px;
+        height: 300px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        line-height: px;
+        gap: 25px;
+        justify-content: space-between;
+    }
+    a {
+        text-decoration: none;
+        color: #978e87;
+    }
+    .bottom_box3_1 {
+        line-height: 5px;
+        font-size: 14px;
+    }
+    .bottom_box3_1a p{
+        font-size: 14px;
+        font-style: italic;
+    }
+    .bottom_box3_2 {
+        display: flex; 
+        gap: 10px;
+    }
+    .bottom_box3_2img {
+        height: 50px;
+        width: 180px;
+    }
+    .bottom_box3_2a {
+        display: grid;
+    }
+    .bottom_box4 {
+        height: 90px;
+        margin-top: 19px;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .bottom_box4_img {
+        height: 35px;
+        width: 70px;
+        
+    }
+    .footer_text{
+        display: flex;
+  align-items: center;
+  justify-content: center;
+       padding: 10px;
+        
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        height: 28px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+   /* .bottom_box3_1:hover{
+    text-decoration: underline;
+   } */
+
+     /* discount css */
+     .gbItem_discount {
+        margin-left: 200px;
+       
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: #F30240;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+    }
+    #heart{
+        display:flex ;
+        justify-content: end;
+        margin-right: 20px;
+        margin-bottom: 10px;
+       
+    }
+    #heart:hover{
+        color: #FF6A09;
+        cursor: pointer;
+    }
+    .name2{
+        display: inline-block;
+        background-color: #FFEDF1;
+    }
+    #short{
+        display: flex;
+        justify-content: center;
+        margin-left: 700px;
+        margin-top: 50px;
+        font-size: 20px; 
+        margin-bottom: -20px;
+    }
+    #sd{
+      margin-left: 20px; 
+      font-size: 20px; 
+      background-color: #F2F2F2;
+
+    }
+    #sd:hover{
+        background-color: #FFDA00;
+        cursor: pointer;
+    }
+ 
+        #sp:hover{
+            background-color: #FFDA00;
+            cursor: pointer;
+        }
+        #sp{
+            margin-left: 20px; 
+            font-size: 20px; 
+            background-color: #F2F2F2;
+        } 
+    
+   
+     
+    
+      
