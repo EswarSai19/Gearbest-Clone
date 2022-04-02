@@ -20,8 +20,16 @@ body{
     margin-left: 10px;
 }
 #sign{
-    width: 500px;
-    justify-content: space-evenly;
+    margin: auto;
+}
+#sign i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+#sign p{
+    align-items: center;
+    margin-left: -20px;
+    font-size: 10px;
 }
 #cato{
     display: flex;
@@ -52,9 +60,7 @@ body{
 #icon i {
     margin: auto;
 }
-#sign i{
-    margin: auto;
-}
+ 
 
 /* top part ended */
 

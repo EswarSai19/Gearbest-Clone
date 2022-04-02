@@ -32,8 +32,9 @@ body{
  
  #cato>div{
    display: flex;
-   width: 250px;
+   width: 230px;
    height: 40px;
+   font-size: 18px;
    justify-content: center;
    align-items: center;
  }
@@ -43,7 +44,7 @@ body{
      color: black;
     
  }
- #cato h4:hover{
+ #cato a:hover{
    text-decoration: underline 5px yellow;
    cursor: pointer;
  }
@@ -58,12 +59,13 @@ body{
 
 
 #first_box{
-    width: 92%;
+    width: 85%;
     height: 100px;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
+
 #flash_sales,#all_flash_sales{
     width: 100px;
     height: 98%;
@@ -76,30 +78,46 @@ body{
     margin: auto;
     margin-top: 20px;
 }
-#first_box h3:hover{
+#all_flash_sales:hover h3{
     cursor: pointer;
     font-size: 13px;
     font-weight: bold;
     color: black;
 }
-#first_box div:hover{
+#flash_sales:hover h3{
     cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+}
+#first_box div{
+    cursor: pointer;
+}
+#catagories>div:hover h3{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
 }
 #first_box h3{
     color: #b0b0b0;
     text-align: center;
     line-height: 1px;
-    font-size: 12px;
+    font-size: 13px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#flash_sales h3{
+    font-weight: bold;
 }
 #catagories{
     width : 80%;
-    height: 100%;
+    height: auto;
     display: flex;
 }
 #catagories>div{
-    height: 98%;
+    height: auto;
     width :18%;
+    margin-left: 5px;
 }
 #catagories>i{
     font-size: 20px;
@@ -107,10 +125,12 @@ body{
 }
 #second_box{
     width: 100%;
-    height: 80px;
+    height: auto;
     border: 1px solid;
     margin: auto;
     display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
     background-color: #3e3434;
 }
 #second_box>div:hover{
@@ -120,15 +140,21 @@ body{
 }
 #second_box>div{
     width: 30%;
+    /* justify-content: center; */
 }
 #second_box p{
     text-align: center;
-    color: #857c7c;
+    color: #888080;
     line-height: 2px;
     font-size: 20px;
+    
+}
+#second_box>div:hover p{
+    font-weight: bold;
+    color: #e9e2e2;
 }
 #second_box>div:nth-child(1){
-    margin-left: 60px;
+    margin-left: 100px;
 }
 #third_box{
     width: 100%;
@@ -137,11 +163,9 @@ body{
 }
 #sorting{
     display: flex;
+    margin-left: 100px;
 }
-#sorting p:hover{
-    cursor: pointer;
-    color: #d1b8a4;
-}
+
 #sorting>div{
     margin-left: 10px;
     height: 30px;
@@ -151,13 +175,18 @@ body{
     font-size: 13px;
     margin: auto;
 }
+#sorting>div:hover p{
+    cursor: pointer;
+    color: #888080;
+}
 .arrow i{
     margin: auto;
     font-size: 10px;
     margin-left: 3px;
 }
 #pro_container{
-    
+    width: 85%;
+    margin: auto;
     display: flex;
     display: grid;
     grid-template-columns: repeat(5,1fr);
