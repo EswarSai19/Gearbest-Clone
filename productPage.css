@@ -92,7 +92,9 @@ body{
 .start_end{
     height: 40px;
     display: flex;
+    width: 240px;
     align-items: center;
+    justify-content: space-between;
 }
 .start_end>p:hover{
     cursor: pointer;
@@ -967,6 +969,13 @@ button{
 .bot_box3>div{
     width: 24%;
     margin-bottom: 40px;
+}
+.bot_box3>div h4{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-left: -15px;
+    align-items: center;
 }
 .footer_text{
     align-items: center;

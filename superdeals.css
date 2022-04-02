@@ -19,8 +19,16 @@ body{
     margin-left: 10px;
 }
 #sign{
-    width: 500px;
-    justify-content: space-evenly;
+    margin: auto;
+}
+#sign i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+#sign p{
+    align-items: center;
+    margin-left: -20px;
+    font-size: 10px;
 }
 #cato{
     display: flex;
@@ -293,6 +301,23 @@ h4{
 }
 .bottom_box2_Soical_id i{
     margin: auto;
+}
+.bot_box3{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+.bot_box3>div{
+    width: 24%;
+    margin-bottom: 40px;
+}
+.bot_box3>div h4{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-left: -15px;
+    align-items: center;
 }
 #line1{
    display: flex;
