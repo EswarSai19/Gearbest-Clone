@@ -376,6 +376,7 @@
             img.src = el.image;
     
             var name = document.createElement("p");
+            name.setAttribute("class","product_name")
             name.innerText = el.name;
     
             var price = document.createElement("p");

@@ -214,6 +214,9 @@ body{
 #innerBox:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;            cursor: pointer;
 }
+#innerBox:hover .product_name{
+    color: #fc6903;
+}
 #bottom_container{
     height: 120px;
     width: 100%;
@@ -262,6 +265,10 @@ body{
    height: auto;
    margin: auto;
    /* border: 1px solid; */
+}
+#box2>div:hover h4{
+    color: #ffda00;
+    cursor: default;
 }
 #logo>img{
     width: 100%;
