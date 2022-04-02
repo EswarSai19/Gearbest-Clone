@@ -25,7 +25,6 @@
         }
         table, 
         td, th {
-            border: 1px solid #ddd;
             text-align: left;
         }
 
@@ -39,12 +38,18 @@
 
         th, 
         td {
-            width: 255px;
+            width: 250px;
             padding: 15px;
         }
         tr > th {
+            width: 250px;
             background-color: white;
             color: #13a2b8;
+        }
+        tr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .btn{
             margin-top: 30px;
@@ -82,6 +87,15 @@
         .totalvalue{
             color: red;
         }
+        .cartTableImg{
+            width: 100px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .firstCell{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
@@ -108,17 +122,12 @@
 </body>
 </html>
 <script>
-    // cartArr = [{
-    //     productName: "Newest Xiaomi Redmibook",
-    //     productUnitPrice: "1199.99",
-    //     prodcutQuntity: "4",   
-    // },
-    // {
-    //     productName: "Newest Xiaomi Redmibook",
-    //     productUnitPrice: "1199.99",
-    //     prodcutQuntity: "4",   
-    // }]
-    // localStorage.setItem("cartArr", JSON.stringify(cartArr))
+    cartArr = [{
+        productName: "FIIDO D11 Folding Electric Moped Bicycle",
+        productUnitPrice: "890.00",
+        prodcutQuntity: "1",   
+    }]
+    localStorage.setItem("cartArr", JSON.stringify(cartArr))
     cartArr = JSON.parse(localStorage.getItem("cartArr")) || [];
     if(cartArr.length <= 0){
         var msgDiv = document.createElement("div");
@@ -134,7 +143,15 @@
             var tr = document.createElement("tr");
 
             var td1 = document.createElement("td");
-            td1.innerText = ele.productName;
+            td1.className = "firstCell";
+            var imgspn = document.createElement("span")
+            var img = document.createElement("img");
+            img.src = "https://gloimg.gbtcdn.com/soa/gb/item/6870745450383863808/16432/goods_img_big-v3/ccc66a31ee96.jpg";
+            img.className = "cartTableImg"
+            imgspn.append(img)
+            var pdiv = document.createElement("span");
+            pdiv.innerText = ele.productName;
+            td1.append(imgspn, pdiv);
 
             var td2 = document.createElement("td");
             td2.innerText = ele.productUnitPrice;
