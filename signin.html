@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+    rel="icon"
+    href="https://image.winudf.com/v2/image1/Y29tLmdsb2JhbGVncm93LmFwcC5nZWFyYmVzdF9pY29uXzE1NjEwNTQyNDlfMDc5/icon.png?w=&fakeurl=1"
+    type="image/x-icon"
+  />
+    <title>Join Free gearbest.com</title>
+    <style>
+        #main{
+            width: 25%;
+            height: 600px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+           padding: 20px;
+           padding-left: 35px;
+            margin-left: 900px;
+            margin-top: 50px;
+        }
+        
+       #reg{
+           margin-left: 40px;
+       }
+       input{
+           width: 90%;
+           height: 40px;
+           margin-top: 15px;
+           padding-left: 15px;
+
+       }
+       #form{
+           width: 100%;
+           margin: auto;
+       }
+       #cont{
+           width: 80%;
+           border: 1px solid black;
+           height: 1000px;
+           display: flex;
+           justify-content: space-between;
+       }
+       #check{
+           display: flex;
+          
+       }
+       #box{
+           height: 20px;
+           width: 20px;
+           background-color: #ffda00;
+          
+       }
+      .hov:hover{
+          color: black;
+          text-decoration: underline 4px #ffda00 ;
+      }
+      
+       .hov{
+           text-decoration: none;
+           color:   #bababa;  
+     
+       }
+       .mar{
+           margin-left: 20px;
+       }
+       #red{
+           color:    #ff9320;
+           font-size: 16px;
+       }
+       #logo{
+        
+        width: 15%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        padding: 5px;
+       }
+       #lower{
+           width: 100%;
+          
+           text-align: center;
+           
+       }
+      #submit{
+          background-color: #ffda00;
+          border: none;
+          outline: none;
+          font-weight: bolder;
+          font-size: 16px;
+          padding: 10px;
+          width: 98%;
+          cursor: pointer;
+      }
+     .last{
+          margin-left: 20px;
+          margin-top: 30px;
+      }
+      #gear{
+          margin-left: 200px;
+          margin-top: 30px;
+      }
+      input{
+         
+         box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+         border: none;
+         outline: none;
+      }
+      .mar{
+          margin-left: 30px;
+      }
+      a{
+          font-size: 20px;
+      }
+      #line{
+          display: flex;
+          width: 80%;
+          font-size: 14px;
+          justify-content: space-between;
+      }
+      .para{
+          margin-left: 3px;
+          cursor: pointer;
+      }
+      #note{
+          height: 150px;
+          width: 150px;
+          border: 1px solid black;
+      }
+      .forget{
+          color:  #8d96af;
+          text-decoration: underline;  
+          cursor: pointer;
+
+      }
+    </style>
+</head>
+<body> 
+    
+    <img id="gear" src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" width="200px" height="50px" alt="">
+    <div id="main">
+
+        <div id="sign">
+          <h2><span><a class="hov" href="signin.html">SIGN IN</a></span><a class="hov mar"  href="register.html">REGISTER</a></h2>
+          
+        </div>
+            <div id="form">
+        <form>
+            <input type="email" id="email" placeholder="Email" /><br>
+            <input type="password" id="pass" placeholder="Password"/><br>
+            
+    
+       <div id="check">
+           <div>
+           <input id="box" type="checkbox">
+        </div>
+        <div id="line">
+            <p class="para">Keep me signed in <span id="question"><i class="fa-regular fa-question"></i></span> </p> 
+            <p class="forget">Forgot Your Password?</p>
+        </div>
+          
+       </div>
+       <input type="submit" name="" id="submit" value="Sign In">
+    </form>
+        <div id="lower">
+            <p>Or connect Via</p>
+        <center><img src="https://staffordonline.org/wp-content/uploads/2019/01/Google.jpg" width="40px" height="40px" alt=""></center>    
+            
+        </div>
+        
+
+    </div>
+
+    </div>
+
+  <center><img class="last" src="https://css.gbtcdn.com/imagecache/gbw/img/site/money_back2@.png" alt="">
+    <img class="last" src="https://css.gbtcdn.com/imagecache/gbw/img/site/mcafee_secure@.png" alt="">
+    <img class="last" src="https://css.gbtcdn.com/imagecache/gbw/img/site/paypal@.png" alt=""></center>  
+</body>
+</html>
+
+<script> 
+
+   
+      document.querySelector("form").addEventListener("submit",myfun)
+      var signin=JSON.parse(localStorage.getItem("userdata")) 
+     
+      function myfun()
+      {
+            event.preventDefault()
+            var email=document.querySelector("#email").value
+            var password=document.querySelector("#pass").value
+            signin.map(function(ele){
+          if(email==ele.email && password==ele.password)
+          {
+              alert("Sign In Successful");
+             window.location.href = "index.html"
+             
+          }
+          else{
+                alert("Sign In failed")
+                
+          }
+      })
+            
+      }
+         
+        
+</script>
