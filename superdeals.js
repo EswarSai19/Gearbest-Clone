@@ -463,7 +463,11 @@
     }
             // console.log(el);
     
-       
+    document.querySelector(".default").addEventListener("click",defaultFun)
+    function defaultFun(){
+        window.location.reload();
+        
+    } 
     
 
 
