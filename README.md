@@ -73,6 +73,7 @@ After clicking any product user redirect to respective product details page . H
 This is Superdeals section . From this section user can takes benefit of especial deals .
 
 `App Only page : `
+
 ![App Screenshot](https://miro.medium.com/max/875/1*sAUMJAevKyYZtY-4CSMkUA.png)
 
 This is app only page .
