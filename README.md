@@ -29,7 +29,7 @@ Gearbest is one of the online stores from the country China, and selling mainly 
 
 ## Demo
 
-Insert gif or link to demo
+Live Demo :- https://roaring-florentine-eb6615.netlify.app/
 
 
 ## Screenshots
